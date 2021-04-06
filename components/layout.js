@@ -1,5 +1,6 @@
 ﻿import Head from 'next/head'
 import TopNav from '../components/topnav'
+import Footer from '../components/footer'
 
 import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 export const siteTitle = 'Pluméo'
@@ -18,7 +19,7 @@ export default function Layout({ children, home }) {
 				<div className="content-header"></div>
 				<Container fluid="xl"><div className="page">{children}</div></Container>
 			</div>
-			<div className="footer"></div>
+			<div className="footer"><Footer/></div>
 			{!home && (
 				<div>
 					

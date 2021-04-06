@@ -8,7 +8,7 @@ export default function Home() {
 			<h1>Bienvenue<br />sur votre portail auteur</h1>
 			<p className="description">Vous pouvez accéder à tout moment et facilement aux informations concernant votre relation éditeur pour vous faciliter la gestion de votre quotidien administratif.</p>
 
-			<div className="row home">
+			<div className="row home justify-content-md-center">
 				<Link href="titres">
 					<Card className="logo titres">
 						<Card.Img variant="top" src="img/logo/Picto-titres.svg" />
