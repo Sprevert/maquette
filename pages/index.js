@@ -5,8 +5,8 @@ export default function Home() {
 	return (
 		<Layout>
 			<h1>Bienvenue<br />sur votre portail auteur</h1>
-			<p>Vous pouvez accéder à tout moment et facilement aux informations concernant votre relation éditeur pour vous faciliter la gestion de votre quotidien administratif.</p>
-			<div className="row">
+			<p className="description">Vous pouvez accéder à tout moment et facilement aux informations concernant votre relation éditeur pour vous faciliter la gestion de votre quotidien administratif.</p>
+			<div className="row home">
 				<Link href="titres">
 					<Card className="logo titres">
 						<Card.Img variant="top" src="img/logo/Picto-titres.svg" />

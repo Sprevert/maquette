@@ -1,6 +1,7 @@
 ﻿import Head from 'next/head'
 import TopNav from '../components/topnav'
 
+import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 export const siteTitle = 'Pluméo'
 
 export default function Layout({ children, home }) {
@@ -12,8 +13,9 @@ export default function Layout({ children, home }) {
 				<meta name="description" content="Plumeo, votre portail auteur." /><link rel="icon" href="/favicon.ico" />
 				<meta name="og:title" content={siteTitle} />
 			</Head>
-			<TopNav />
-			<main>{children}</main>
+			<div className="header"><TopNav /></div>
+			<div className="content"><Container fluid="lg">{children}</Container></div>
+			<div className="footer"></div>
 			{!home && (
 				<div>
 					

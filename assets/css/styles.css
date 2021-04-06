@@ -1,14 +1,23 @@
+
+body { background-image: url('/img/background/Madrigall-image-generique.jpg'); font-family: Asap,Brygada-1918; }
+
+.header, .footer { background-color: #fff; color: #192866; }
+.content { color: #fff; }
+.content h1{text-align:center;font-style:italic;}
+.content p.description{width:50%;text-align:center;margin:auto;}
+
+.home {margin:auto;}
 .avatar { color: #fff; background-color: #adb5bd; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; border-radius: 50%; height: 48px; width: 48px; }
 .avatar img { width: 100%; border-radius: 50%; }
 .avatar + .avatar-content { display: inline-block; margin-left: .75rem; }
 
 .media { display: flex; align-items: flex-start; }
 
-.logo { padding-top:10px;border-radius: 8px; border-bottom: 10px solid #1453b3; width: 170px; height: 170px; margin: 10px; text-align: center; cursor:pointer;}
+.logo { padding-top: 10px; border-radius: 8px; border-bottom: 10px solid #1453b3; width: 170px; height: 170px; margin: 10px; text-align: center; cursor: pointer; }
 .logo img { height: 80px; margin: 10px auto; }
 .logo .card-body { padding: 5px; }
-.logo .card-title { font-size: 18px; }
-.logo:hover{height:180px;}
+.logo .card-title { font-size: 18px; font-weight:bold;}
+.logo:hover { height: 180px; }
 .logo.titres { border-bottom-color: #89d369; color: #89d369; }
 .logo.documents { border-bottom-color: #d3ba00; color: #d3ba00; }
 .logo.cessions { border-bottom-color: #7db4ff; color: #7db4ff; }

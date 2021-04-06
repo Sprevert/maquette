@@ -5,8 +5,8 @@ import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 
 export default function TopNav() {
 	return (
-		<Navbar collapseOnSelect expand="lg">
-			<Container fluid="lg">
+		<Navbar collapseOnSelect expand="xl">
+			<Container fluid="xl">
 				<Navbar.Brand href="#home">
 					<Link href="/">
 						<Image src="/img/logo/Logo-plumeo.svg" alt="Pluméo" height={50} width={100} />
