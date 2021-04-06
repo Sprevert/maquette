@@ -10,6 +10,8 @@ body { font-family: Asap Bold; }
 
 .home { margin: 2% auto; }
 .page { margin-top: -280px; position: relative; }
+.page h1 img{vertical-align:middle;margin-right:5px;}
+
 .avatar { color: #fff; background-color: #adb5bd; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; border-radius: 50%; height: 48px; width: 48px; }
 .avatar img { width: 100%; border-radius: 50%; }
 .avatar + .avatar-content { display: inline-block; margin-left: .75rem; }
@@ -25,6 +27,7 @@ body { font-family: Asap Bold; }
 .logo.documents { border-bottom-color: #d3ba00; color: #d3ba00; }
 .logo.cessions { border-bottom-color: #7db4ff; color: #7db4ff; }
 .logo.compte { border-bottom-color: #ff8a54; color: #ff8a54; }
+
 
 /*
 Bleu logo : 1453b3
