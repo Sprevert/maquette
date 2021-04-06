@@ -1,0 +1,41 @@
+﻿import Link from 'next/link'
+import Image from 'next/image'
+import { Navbar, Nav, Media, Container } from 'react-bootstrap'
+
+
+export default function TopNav() {
+	return (
+		<Navbar collapseOnSelect expand="lg">
+			<Container fluid="lg">
+				<Navbar.Brand href="#home">
+					<Link href="/">
+						<Image src="/img/logo/Logo-plumeo.svg" alt="Pluméo" height={50} width={100} />
+					</Link>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="me-auto">
+						<Nav.Link href="titres">Mes titres</Nav.Link>
+						<Nav.Link href="documents">Mes documents</Nav.Link>
+						<Nav.Link href="cessions">Mes cessions</Nav.Link>
+						<Nav.Link href="compte">Mon compte</Nav.Link>
+					</Nav>
+					<Nav>
+						<Media className="align-items-center">
+							<Media className="me-1">
+								<span>Jean Christophe Rufin</span>
+							</Media>
+							<span className="avatar">
+								<img
+									alt="Jean Christophe Rufin"
+									src="img/auteur/Rufin-195x195.jpg"
+								/>
+							</span>
+							
+						</Media>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
+	)
+}

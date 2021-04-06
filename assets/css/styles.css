@@ -1,0 +1,24 @@
+.avatar { color: #fff; background-color: #adb5bd; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; border-radius: 50%; height: 48px; width: 48px; }
+.avatar img { width: 100%; border-radius: 50%; }
+.avatar + .avatar-content { display: inline-block; margin-left: .75rem; }
+
+.media { display: flex; align-items: flex-start; }
+
+.logo { padding-top:10px;border-radius: 8px; border-bottom: 10px solid #1453b3; width: 170px; height: 170px; margin: 10px; text-align: center; cursor:pointer;}
+.logo img { height: 80px; margin: 10px auto; }
+.logo .card-body { padding: 5px; }
+.logo .card-title { font-size: 18px; }
+.logo:hover{height:180px;}
+.logo.titres { border-bottom-color: #89d369; color: #89d369; }
+.logo.documents { border-bottom-color: #d3ba00; color: #d3ba00; }
+.logo.cessions { border-bottom-color: #7db4ff; color: #7db4ff; }
+.logo.compte { border-bottom-color: #ff8a54; color: #ff8a54; }
+
+/*
+Bleu logo : 1453b3
+Vert mes titres : 89d369
+Ocre mes documents : d3ba00
+Bleu mes cessions : 7db4ff
+Orange mon compte : ff8a54
+Bleu très foncé bloc image de fond : 192866
+*/
