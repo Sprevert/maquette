@@ -14,7 +14,10 @@ export default function Layout({ children, home }) {
 				<meta name="og:title" content={siteTitle} />
 			</Head>
 			<div className="header"><TopNav /></div>
-			<div className="content"><Container fluid="lg">{children}</Container></div>
+			<div className="content">
+				<div className="content-header"></div>
+				<Container fluid="xl"><div className="page">{children}</div></Container>
+			</div>
 			<div className="footer"></div>
 			{!home && (
 				<div>
