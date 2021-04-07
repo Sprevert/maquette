@@ -1,5 +1,5 @@
 ﻿import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '../components/content'
 import Livres from '../components/Livres';
 
 export default function Home() {

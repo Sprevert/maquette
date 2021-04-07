@@ -1,5 +1,5 @@
 ﻿import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/content'
 import { Card, CardGroup } from 'react-bootstrap'
 export default function Home() {
 	return (

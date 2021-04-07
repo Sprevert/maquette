@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/content'
 export default function Login() {
 	return (
 		<Layout>
