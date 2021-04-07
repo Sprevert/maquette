@@ -21,7 +21,7 @@ const rows = [
 export default function DataTable() {
 	return (
 		<React.Fragment>
-			<Table hover>
+			<Table hover responsive>
 				<thead>
 					<tr>
 						<th colspan="2">TITRE</th>
