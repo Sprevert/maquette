@@ -28,7 +28,8 @@ body { font-family: Asap Bold; }
 .logo.cessions { border-bottom-color: #7db4ff; color: #7db4ff; }
 .logo.compte { border-bottom-color: #ff8a54; color: #ff8a54; }
 
-
+.cTable table { background-color: #fff; border-radius: 10px;border-spacing:0px;}
+.cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
 /*
 Bleu logo : 1453b3
 Vert mes titres : 89d369
