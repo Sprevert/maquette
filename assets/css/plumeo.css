@@ -24,7 +24,7 @@ body { font-family: Asap Bold; }
 .logo img { height: 80px; margin: 10px auto; }
 .logo .card-body { padding: 5px; }
 .logo .card-title { font-size: 18px; font-weight: bold; }
-.logo:hover { box-shadow: 4px 4px 10px #000; }
+.logo:hover { box-shadow: 4px 4px 10px #000; transform: translate(0, -10%); }
 .logo.titres { border-bottom-color: #89d369;}
 .logo.titres .h5{ color: #89d369; }
 .logo.documents { border-bottom-color: #d3ba00; }
