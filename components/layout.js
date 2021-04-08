@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 export const siteTitle = 'Pluméo'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, login }) {
 	return (
 		<div>
 			<Head>
@@ -14,17 +14,14 @@ export default function Layout({ children, home }) {
 				<meta name="description" content="Plumeo, votre portail auteur." /><link rel="icon" href="/favicon.ico" />
 				<meta name="og:title" content={siteTitle} />
 			</Head>
-			<div className="header"><TopNav /></div>
+			{!login && (
+				<div className="header"><TopNav /></div>
+			)}
 			<div className="content">
 				<div className="content-header"></div>
 				<Container fluid="xl"><div className="page">{children}</div></Container>
 			</div>
-			<div className="footer"><Footer/></div>
-			{!home && (
-				<div>
-					
-				</div>
-			)}
+			<div className="footer"><Footer /></div>
 		</div>
 	)
 }
