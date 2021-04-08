@@ -28,24 +28,27 @@ const Dashboard = (props) => {
 								</Card.Body>
 							</Card>
 						</Link>
+						<Link href="documents">
 						<Card className="logo documents">
 							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-documents.svg")} />
 							<Card.Body>
 								<Card.Title>Mes documents</Card.Title>
 							</Card.Body>
-						</Card>
+							</Card></Link>
+						<Link href="cessions">
 						<Card className="logo cessions">
 							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-cessions.svg")} />
 							<Card.Body>
 								<Card.Title>Mes cessions</Card.Title>
 							</Card.Body>
-						</Card>
+							</Card></Link>
+						<Link href="profile">
 						<Card className="logo compte">
 							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-compte.svg")} />
 							<Card.Body>
 								<Card.Title>Mon compte</Card.Title>
 							</Card.Body>
-						</Card>
+							</Card></Link>
 					</div>
 				</div>
 			</Container>
