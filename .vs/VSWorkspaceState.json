@@ -3,14 +3,15 @@
     "",
     "\\assets",
     "\\assets\\css",
-    "\\assets\\img",
-    "\\assets\\img\\auteur",
-    "\\pages",
-    "\\public",
-    "\\public\\img",
-    "\\public\\img\\auteur",
-    "\\public\\img\\logo"
+    "\\assets\\scss",
+    "\\assets\\scss\\argon-dashboard",
+    "\\assets\\scss\\argon-dashboard\\custom",
+    "\\assets\\scss\\argon-dashboard\\docs",
+    "\\assets\\scss\\react",
+    "\\assets\\scss\\react\\bootstrap",
+    "\\components",
+    "\\components\\Navbars"
   ],
-  "SelectedNode": "\\assets\\img\\auteur",
+  "SelectedNode": "\\assets\\scss\\react\\react-differences.scss",
   "PreviewInSolutionExplorer": false
 }
