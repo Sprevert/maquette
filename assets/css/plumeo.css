@@ -1,17 +1,16 @@
 
-body { font-family: Asap Bold; }
-
-
-.header, .footer { background-color: #fff; color: #1453b3; }
-.nav-link { color: #1453b3!important; }
-.main-content { color: #fff; position: relative; background-color: #192866; padding-bottom: 20px; }
+body { background-color: #E8EDE6!important; }
+.navbar-light{background-color:#fff!important;}
+.nav-link { color: #1453b3 !important; }
+.main-content { color: #fff; position: relative; background-color: #E8EDE6; padding-bottom: 20px; }
+.main-content.home { background-color: #192866; }
 .content-header { background-image: url('/img/background/Madrigall-image-generique.jpg'); background-size: cover; background-position: center top; min-height: 300px; position: relative; }
 .content h1 { text-align: center; font-style: italic; }
+.footer{ background-color: transparent!important; }
 
-.home { margin: 2% auto; }
 .page { margin-top: -280px; position: relative; color: #fff; }
 .page h1, .page p { text-align: center; }
-.page p { max-width: 500px;margin:auto; }
+.page p { max-width: 500px; margin: auto; }
 .page h1 img { vertical-align: middle; margin-right: 5px; }
 
 .avatar { color: #fff; background-color: #adb5bd; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; border-radius: 50%; height: 48px; width: 48px; }
@@ -25,15 +24,20 @@ body { font-family: Asap Bold; }
 .logo .card-body { padding: 5px; }
 .logo .card-title { font-size: 18px; font-weight: bold; }
 .logo { transition: all 0.2s }
-.logo:hover { box-shadow: 4px 4px 10px #000; transform: translate(-5px, -5px);}
-.logo.titres { border-bottom-color: #89d369;}
-.logo.titres .h5{ color: #89d369; }
+.logo:hover { box-shadow: 4px 4px 10px #000; transform: translate(-5px, -5px); }
+.logo.titres { border-bottom-color: #89d369; }
+.logo.titres .h5 { color: #89d369; }
 .logo.documents { border-bottom-color: #d3ba00; }
-.logo.documents .h5 { color: #d3ba00 ; }
-.logo.cessions { border-bottom-color: #7db4ff;  }
+.logo.documents .h5 { color: #d3ba00; }
+.logo.cessions { border-bottom-color: #7db4ff; }
 .logo.cessions .h5 { color: #7db4ff; }
-.logo.compte { border-bottom-color: #ff8a54;}
+.logo.compte { border-bottom-color: #ff8a54; }
 .logo.compte .h5 { color: #ff8a54; }
+
+.header.titres { border-bottom: #89d369 solid 10px; }
+.header.documents { border-bottom: #d3ba00 solid 10px; }
+.header.cessions { border-bottom: #7db4ff solid 10px; }
+.header.compte { border-bottom: #ff8a54 solid 10px; }
 
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
 .cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }

@@ -5,11 +5,11 @@ import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
 
 
 
-function TitreHeader() {
+function TitreHeader(props) {
     return (
         <>
             <div
-                className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+                className={"header pb-8 pt-5 pt-lg-8 d-flex align-items-center " + props.className}
                 style={{
                     minHeight: "300px",
                     backgroundImage:
@@ -18,9 +18,6 @@ function TitreHeader() {
                     backgroundPosition: "center top",
                 }}
             >
-                {/* Mask */}
-                <span />
-                {/* Header container */}
 
             </div>
         </>

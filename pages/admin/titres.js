@@ -29,7 +29,7 @@ import TitreHeader from "components/Headers/TitreHeader.js";
 function Tables() {
 	return (
 		<>
-			<TitreHeader />
+			<TitreHeader className="titres" />
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}
@@ -45,65 +45,39 @@ function Tables() {
 										<th scope="col" colspan="2">EAN</th>
 										<th scope="col">Titre</th>
 										<th scope="col">Maison</th>
-										<th scope="col" align="right">Date de parution</th>
+										<th scope="col" className="text-right">Date de parution</th>
 										<th scope="col">Format</th>
-										<th scope="col" align="right">Ventes 2020</th>
-										<th scope="col" align="right">Ventes depuis parution</th>
-										<th scope="col" />
+										<th scope="col" className="text-right">Ventes 2020</th>
+										<th scope="col" className="text-right">Ventes depuis parution</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<th scope="row">
-											<Media className="align-items-center">
-												<a
-													className=""
-													href="article"
-												>
-													<img
-														height="48"
-														alt="..."
-														src={require("assets/img/couverture/9782070146413.jpg")}
-													/>
-												</a>
-											</Media>
-										</th>
-
-										<td><Link href="article">9782070146413</Link></td>
-										<td>CHECK-POINT</td>
-										<td>BLANCHE</td>
-										<td align="right">10/04/2015</td>
-										<td>LIVRE</td>
-										<td align="right">1 000</td>
-										<td align="right">200 000</td>
-										<td className="text-right">
-											<UncontrolledDropdown>
-												<DropdownToggle
-													className="btn-icon-only text-light"
-													href="#pablo"
-													role="button"
-													size="sm"
-													color=""
-													onClick={(e) => e.preventDefault()}
-												>
-													<i className="fas fa-ellipsis-v" />
-												</DropdownToggle>
-												<DropdownMenu className="dropdown-menu-arrow" right>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>Action</DropdownItem>
-													<DropdownItem
+									<Link href="article">
+										<tr>
+											<th scope="row">
+												<Media className="align-items-center">
+													<a
+														className=""
 														href="article"
-														onClick={(e) => e.preventDefault()}
 													>
-														...
-                          </DropdownItem>
-													
-												</DropdownMenu>
-											</UncontrolledDropdown>
-										</td>
-									</tr>
+														<img
+															height="48"
+															alt="..."
+															src={require("assets/img/couverture/9782070146413.jpg")}
+														/>
+													</a>
+												</Media>
+											</th>
+
+											<td>9782070146413</td>
+											<td>CHECK-POINT</td>
+											<td>BLANCHE</td>
+											<td align="right">10/04/2015</td>
+											<td>LIVRE</td>
+											<td align="right">1 000</td>
+											<td align="right">200 000</td>
+										</tr>
+									</Link>
 									<tr>
 										<th scope="row">
 											<Media className="align-items-center">
@@ -127,40 +101,7 @@ function Tables() {
 										<td>LIVRE</td>
 										<td align="right">8 000</td>
 										<td align="right">180 000</td>
-										<td className="text-right">
-											<UncontrolledDropdown>
-												<DropdownToggle
-													className="btn-icon-only text-light"
-													href="#pablo"
-													role="button"
-													size="sm"
-													color=""
-													onClick={(e) => e.preventDefault()}
-												>
-													<i className="fas fa-ellipsis-v" />
-												</DropdownToggle>
-												<DropdownMenu className="dropdown-menu-arrow" right>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Another action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Something else here
-                          </DropdownItem>
-												</DropdownMenu>
-											</UncontrolledDropdown>
-										</td>
+
 									</tr>
 									<tr>
 										<th scope="row">
@@ -185,40 +126,7 @@ function Tables() {
 										<td>LIVRE</td>
 										<td align="right">5 000</td>
 										<td align="right">100 000</td>
-										<td className="text-right">
-											<UncontrolledDropdown>
-												<DropdownToggle
-													className="btn-icon-only text-light"
-													href="#pablo"
-													role="button"
-													size="sm"
-													color=""
-													onClick={(e) => e.preventDefault()}
-												>
-													<i className="fas fa-ellipsis-v" />
-												</DropdownToggle>
-												<DropdownMenu className="dropdown-menu-arrow" right>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Another action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Something else here
-                          </DropdownItem>
-												</DropdownMenu>
-											</UncontrolledDropdown>
-										</td>
+
 									</tr>
 									<tr>
 										<th scope="row">
@@ -230,40 +138,7 @@ function Tables() {
 										<td>LIVRE</td>
 										<td align="right">500</td>
 										<td align="right">10 000</td>
-										<td className="text-right">
-											<UncontrolledDropdown>
-												<DropdownToggle
-													className="btn-icon-only text-light"
-													href="#pablo"
-													role="button"
-													size="sm"
-													color=""
-													onClick={(e) => e.preventDefault()}
-												>
-													<i className="fas fa-ellipsis-v" />
-												</DropdownToggle>
-												<DropdownMenu className="dropdown-menu-arrow" right>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Another action
-                          </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Something else here
-                          </DropdownItem>
-												</DropdownMenu>
-											</UncontrolledDropdown>
-										</td>
+
 									</tr>
 								</tbody>
 							</Table>

@@ -26,15 +26,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/admin/home": [
+    "/admin/article": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/admin/home.js"
-    ],
-    "/admin/profile": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/admin/profile.js"
+      "static/chunks/pages/admin/article.js"
     ]
   },
   "ampFirstPages": []

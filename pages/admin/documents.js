@@ -21,7 +21,7 @@ import Header from "components/Headers/Header.js";
 function Documents() {
 	return (
 		<>
-			<Header />
+			<Header className="documents" />
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}

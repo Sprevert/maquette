@@ -11,8 +11,8 @@ function Footer() {
 			<Row className="align-items-center justify-content-xl-between">
 				<Col xl="6">
 					<div className="copyright text-center text-xl-left text-muted">
-						<span className="m-1">Mentions légales</span>
-						<span className="m-1">Groupe Madrigall{" "} {new Date().getFullYear()}</span>
+						<span className="m-2">Mentions légales</span>
+						<span className="m-2">Groupe Madrigall{" "} {new Date().getFullYear()}</span>
 					</div>
 				</Col>
 
@@ -20,7 +20,7 @@ function Footer() {
 					<Nav className="nav-footer justify-content-center justify-content-xl-end">
 
 						<NavItem>
-							<Image src={require("assets/img/plumeo/Madrigall.jpg")} alt="Groupe Madrigall" height={31} width={120} />
+							<Image src={require("assets/img/plumeo/GroupeMadrigall.webp")} alt="Groupe Madrigall" height={31} width={120} />
 						</NavItem>
 
 					</Nav>

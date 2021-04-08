@@ -37,7 +37,7 @@ function Admin(props) {
 					imgAlt: "...",
 				}}
 			/>
-			<div className="main-content" ref={mainContentRef}>
+			<div className={"main-content" + (getBrandText() == "Accueil" ? " home" : "")} ref={mainContentRef}>
 				{props.children}
 
 			</div>
