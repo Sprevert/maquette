@@ -22,11 +22,11 @@ function Sidebar(props) {
 		});
 	};
 	return (
-		<Navbar collapseOnSelect expand="xl">
+		<Navbar collapseOnSelect expand="xl" className="p-3">
 			<Container fluid="xl">
 				<Navbar.Brand href="#home">
 					<Link href="/">
-						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={50} width={100} />
+						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={61} width={160} />
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />

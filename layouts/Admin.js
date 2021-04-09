@@ -24,6 +24,7 @@ function Admin(props) {
 				return routes[i].name;
 			}
 		}
+		if (router.route.indexOf('/article')) return 'titres'
 		return "Accueil";
 	};
 	return (

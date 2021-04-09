@@ -1,11 +1,11 @@
 
 body { background-color: #E8EDE6 !important; }
 .navbar-light { background-color: #fff !important; color: #1453b3!important; }
-.navbar-light .nav-link { color: #1453b3 !important; padding:0px!important;margin:0 1em;}
-.titres.nav-link.active { border-bottom: 3px solid #89d369; }
-.documents.nav-link.active { border-bottom: 3px solid #d3ba00; }
-.cessions.nav-link.active { border-bottom: 3px solid #7db4ff; }
-.compte.nav-link.active { border-bottom: 3px solid #ff8a54; }
+.navbar-light .nav-link { color: #1453b3 !important; padding: 0px !important; margin: 0 1em; font-weight: bold; border-bottom: 3px solid #fff; }
+.titres.nav-link.active,.titres.nav-link:hover { border-bottom-color:#89d369; }
+.documents.nav-link.active, .documents.nav-link:hover { border-bottom-color: #d3ba00; }
+.cessions.nav-link.active, .cessions.nav-link:hover { border-bottom-color: #7db4ff; }
+.compte.nav-link.active, .compte.nav-link:hover { border-bottom-color: #ff8a54; }
 
 .main-content { color: #fff; position: relative; background-color: #E8EDE6; padding-bottom: 20px; }
 .main-content.home { background-color: #192866; }

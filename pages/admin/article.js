@@ -45,7 +45,8 @@ function Documents() {
 	};
 	return (
 		<>
-			<Header />
+			<Header className="titres" />
+
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}
