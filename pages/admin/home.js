@@ -15,7 +15,7 @@ const Dashboard = (props) => {
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				<div className="page">
-					<div className="justify-content-md-center">
+					<div className="text-center">
 						<h1>Bienvenue<br />sur votre portail auteur</h1>
 						<p>Vous pouvez accéder à tout moment et facilement aux informations concernant votre relation éditeur pour vous faciliter la gestion de votre quotidien administratif.</p>
 					</div>

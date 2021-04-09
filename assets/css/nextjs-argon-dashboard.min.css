@@ -1663,6 +1663,8 @@ a.bg-darker:hover, a.bg-darker:focus, button.bg-darker:hover, button.bg-darker:f
 	.align-self-sm-stretch { align-self: stretch !important }
 }
 
+.justify-content-md-center { justify-content: center !important }
+
 @media (min-width: 768px) {
 	.flex-md-row { flex-direction: row !important }
 	.flex-md-column { flex-direction: column !important }
@@ -1678,7 +1680,7 @@ a.bg-darker:hover, a.bg-darker:focus, button.bg-darker:hover, button.bg-darker:f
 	.flex-md-shrink-1 { flex-shrink: 1 !important }
 	.justify-content-md-start { justify-content: flex-start !important }
 	.justify-content-md-end { justify-content: flex-end !important }
-	.justify-content-md-center { justify-content: center !important }
+	
 	.justify-content-md-between { justify-content: space-between !important }
 	.justify-content-md-around { justify-content: space-around !important }
 	.align-items-md-start { align-items: flex-start !important }
