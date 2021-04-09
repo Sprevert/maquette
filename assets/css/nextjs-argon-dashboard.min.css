@@ -72,7 +72,7 @@ output { display: inline-block }
 summary { display: list-item; cursor: pointer }
 template { display: none }
 [hidden] { display: none !important }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: .5rem; font-family: inherit; font-weight: 600; line-height: 1.5; color: #32325d }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: .5rem; font-family: inherit; font-weight: 600; line-height: 1.5; color: #fff }
 h1, .h1 { font-size: 1.625rem }
 h2, .h2 { font-size: 1.25rem }
 h3, .h3 { font-size: 1.0625rem }
@@ -1819,9 +1819,9 @@ a.bg-darker:hover, a.bg-darker:focus, button.bg-darker:hover, button.bg-darker:f
 }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0 }
 .sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal }
-.shadow-sm { box-shadow: 0 0 0.5rem rgba(136,152,170,0.075) !important }
-.shadow, .card-profile-image img { box-shadow: 0 0 2rem 0 rgba(136,152,170,0.15) !important }
-.shadow-lg { box-shadow: 0 0 3rem rgba(136,152,170,0.175) !important }
+.shadow-sm { box-shadow: 0 0 0.5rem rgba(20 83 179 / 15%) !important }
+.shadow, .card-profile-image img { box-shadow: 0 0 2rem 0 rgba(20 83 179 / 15%) !important }
+.shadow-lg { box-shadow: 0 0 3rem rgba(20 83 179 / 15%) !important }
 .shadow-none { box-shadow: none !important }
 .w-25 { width: 25% !important }
 .w-50 { width: 50% !important }
@@ -3950,13 +3950,13 @@ a.btn-icon-only { line-height: 2.5 }
 .dropdown-menu-sm { min-width: 100px; border: .4375rem }
 .dropdown-menu-lg { min-width: 260px; border-radius: .4375rem }
 .dropdown-menu-xl { min-width: 450px; border-radius: .4375rem }
-.footer { background: #f7fafc; padding: 2.5rem 0 }
+.footer { background: #f7fafc;}
 .footer .col-footer .heading { color: #8898aa; letter-spacing: 0; font-size: .875rem; text-transform: uppercase; font-weight: 600; margin-bottom: 1rem }
 .footer .nav .nav-item .nav-link, .footer .footer-link { color: #8898aa !important }
 .footer .nav .nav-item .nav-link:hover, .footer .footer-link:hover { color: #525f7f !important }
 .footer .list-unstyled li a { display: inline-block; padding: .125rem 0; color: #8898aa; font-size: .85rem }
 .footer .list-unstyled li a:hover { color: #525f7f }
-.footer .copyright { font-size: .875rem }
+.footer .copyright { font-size: .875rem; color: #1453b3; }
 .footer-dark .col-footer .heading { color: #fff }
 .nav-footer .nav-link { font-size: .875rem }
 .nav-footer .nav-item:last-child .nav-link { padding-right: 0 }

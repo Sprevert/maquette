@@ -10,7 +10,7 @@ function Footer() {
 		<footer className="footer">
 			<Row className="align-items-center justify-content-xl-between">
 				<Col xl="6">
-					<div className="copyright text-center text-xl-left text-muted">
+					<div className="copyright text-center text-xl-left">
 						<span className="m-2">Mentions légales</span>
 						<span className="m-2">Groupe Madrigall{" "} {new Date().getFullYear()}</span>
 					</div>

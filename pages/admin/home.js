@@ -54,7 +54,7 @@ const Dashboard = (props) => {
 						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={30} />
 						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={30} />
 						<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={30} />
-						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={30} />
+						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={50} />
 					</div>
 				</div>
 			</Container>
