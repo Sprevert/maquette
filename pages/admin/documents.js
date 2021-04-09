@@ -35,7 +35,7 @@ function Documents() {
 									</div>
 								</Row>
 							</CardHeader>
-							<CardBody>
+							<CardBody className="p-0">
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
@@ -71,7 +71,7 @@ function Documents() {
 									</div>
 								</Row>
 							</CardHeader>
-							<CardBody>
+							<CardBody className="p-0">
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
@@ -121,7 +121,7 @@ function Documents() {
 									</div>
 								</Row>
 							</CardHeader>
-							<CardBody>
+							<CardBody className="p-0">
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
@@ -172,7 +172,7 @@ function Documents() {
 									</div>
 								</Row>
 							</CardHeader>
-							<CardBody>
+							<CardBody className="p-0">
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
