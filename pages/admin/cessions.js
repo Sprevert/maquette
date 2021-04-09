@@ -28,7 +28,9 @@ import Header from "components/Headers/Header.js";
 function Cessions() {
 	return (
 		<>
-			<Header />
+			<Header className="cessions">
+				<div><h1><img src={require("assets/img/plumeo/Picto-cessions-blanc.svg")} /><span>Mes cessions</span></h1></div>
+			</Header>
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}

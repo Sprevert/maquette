@@ -21,7 +21,9 @@ import Header from "components/Headers/Header.js";
 function Documents() {
 	return (
 		<>
-			<Header className="documents" />
+			<Header className="documents">
+				<div><h1><img src={require("assets/img/plumeo/Picto-documents-blanc.svg")} /><span>Mes documents</span></h1></div>
+			</Header>
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}

@@ -16,12 +16,14 @@ import {
 // layout for this page
 import Admin from "layouts/Admin.js";
 // core components
-import UserHeader from "components/Headers/UserHeader.js";
+import Header from "components/Headers/Header.js";
 
 function Profile() {
 	return (
 		<>
-			<UserHeader />
+			<Header className="compte">
+				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span>Mon compte auteur</span></h1></div>
+			</Header>
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				<Row>

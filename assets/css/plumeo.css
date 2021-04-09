@@ -18,7 +18,13 @@ body { background-color: #E8EDE6 !important; }
 .header h1 span{ font-size: 50px; }
 .header h1 span:before { content: " "; width: 70px; border-bottom: 5px #fff solid; position: absolute; bottom: 20px; }
 .header.titres h1 span:before { border-bottom-color: #89d369; }
-
+.header.documents h1 span:before { border-bottom-color: #d3ba00; }
+.header.cessions h1 span:before { border-bottom-color: #7db4ff; }
+.header.compte h1 span:before { border-bottom-color: #ff8a54; }
+.header.titres { border-bottom: 10px solid #89d369; }
+.header.documents { border-bottom: 10px solid #d3ba00; }
+.header.cessions { border-bottom: 10px solid #7db4ff; }
+.header.compte { border-bottom: 10px solid #ff8a54; }
 
 .titres tr td { cursor: pointer; }
 .titres tr th { font-weight:bold;}
