@@ -57,7 +57,8 @@ body { background-color: #E8EDE6 !important; }
 .logo.compte .h5 { color: #ff8a54; }
 
 
-
+.editions { text-align: center; }
+.editions img { padding:0 15px;}
 
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
 .cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
