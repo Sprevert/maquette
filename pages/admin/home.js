@@ -51,10 +51,10 @@ const Dashboard = (props) => {
 							</Card></Link>
 					</div>
 					<div className="editions p-3">
-						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Pluméo" height={40} />
-						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Pluméo" height={40} />
-						<img src={require("assets/img/plumeo/Poche_logo.png")} alt="Pluméo" height={40} />
-						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="Pluméo" height={40} />
+						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Pluméo" height={30} />
+						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Pluméo" height={30} />
+						<img src={require("assets/img/plumeo/Folio_logo.svg")} alt="Pluméo" height={30} />
+						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="Pluméo" height={30} />
 					</div>
 				</div>
 			</Container>
