@@ -1,12 +1,28 @@
 
-body { background-color: #E8EDE6!important; }
-.navbar-light{background-color:#fff!important;}
-.nav-link { color: #1453b3 !important; }
+body { background-color: #E8EDE6 !important; }
+.navbar-light { background-color: #fff !important; }
+.nav-link { color: #1453b3 !important; padding:0px!important;margin:0 1em;}
+.titres.nav-link.active { border-bottom: 3px solid #89d369; }
+.documents.nav-link.active { border-bottom: 3px solid #d3ba00; }
+.cessions.nav-link.active { border-bottom: 3px solid #7db4ff; }
+.compte.nav-link.active { border-bottom: 3px solid #ff8a54; }
+
 .main-content { color: #fff; position: relative; background-color: #E8EDE6; padding-bottom: 20px; }
 .main-content.home { background-color: #192866; }
 .content-header { background-image: url('/img/background/Madrigall-image-generique.jpg'); background-size: cover; background-position: center top; min-height: 300px; position: relative; }
 .content h1 { text-align: center; font-style: italic; }
-.footer{ background-color: transparent!important; }
+.footer { background-color: transparent !important; }
+
+.header div { width: 100%; position: relative; text-align: center; }
+.header h1 img { height: 60px; margin-right: 10px; font-size: 24px; }
+.header h1 span{ font-size: 50px; }
+.header h1 span:before { content: " "; width: 70px; border-bottom: 5px #fff solid; position: absolute; bottom: 20px; }
+.header.titres h1 span:before { border-bottom-color: #89d369; }
+
+
+.titres tr td { cursor: pointer; }
+.titres tr th { font-weight:bold;}
+.titres tr:hover { background-color: #f6f9fc; }
 
 .page { margin-top: -280px; position: relative; color: #fff; }
 .page h1, .page p { text-align: center; }
@@ -34,10 +50,8 @@ body { background-color: #E8EDE6!important; }
 .logo.compte { border-bottom-color: #ff8a54; }
 .logo.compte .h5 { color: #ff8a54; }
 
-.header.titres { border-bottom: #89d369 solid 10px; }
-.header.documents { border-bottom: #d3ba00 solid 10px; }
-.header.cessions { border-bottom: #7db4ff solid 10px; }
-.header.compte { border-bottom: #ff8a54 solid 10px; }
+
+
 
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
 .cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }

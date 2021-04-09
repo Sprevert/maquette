@@ -24,25 +24,24 @@ import {
 // layout for this page
 import Admin from "layouts/Admin.js";
 // core components
-import TitreHeader from "components/Headers/TitreHeader.js";
+import Header from "components/Headers/Header.js";
 
 function Tables() {
 	return (
 		<>
-			<TitreHeader className="titres" />
+			<Header className="titres">
+				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span>Mes titres</span></h1></div>
+			</Header>
 			{/* Page content */}
-			<Container className="mt--7" fluid>
+			<Container className="mt--7 titres" fluid>
 				{/* Table */}
 				<Row>
 					<div className="col">
 						<Card className="shadow">
-							{/*<CardHeader className="border-0">
-								<h3 className="mb-0">Mes Titres</h3>
-							</CardHeader>*/}
 							<Table className="align-items-center table-flush" responsive>
 								<thead className="thead-light">
 									<tr>
-										<th scope="col" colspan="2">EAN</th>
+										<th scope="col" colSpan="2">EAN</th>
 										<th scope="col">Titre</th>
 										<th scope="col">Maison</th>
 										<th scope="col" className="text-right">Date de parution</th>
@@ -78,68 +77,75 @@ function Tables() {
 											<td align="right">200 000</td>
 										</tr>
 									</Link>
-									<tr>
-										<th scope="row">
-											<Media className="align-items-center">
-												<a
-													className=""
-													href="article"
-													onClick={(e) => e.preventDefault()}
-												>
-													<img
-														height="48"
-														alt="..."
-														src={require("assets/img/couverture/9782070455379.jpg")}
-													/>
-												</a>
-											</Media>
-										</th>
-										<td><Link href="article">9782070455379</Link></td>
-										<td>Immortelle randonnée - Compostelle malgré moi</td>
-										<td>FOLIO</td>
-										<td align="right">02/10/2014</td>
-										<td>LIVRE</td>
-										<td align="right">8 000</td>
-										<td align="right">180 000</td>
+									<Link href="article">
+										<tr>
 
-									</tr>
-									<tr>
-										<th scope="row">
-											<Media className="align-items-center">
-												<a
-													className=""
-													href="article"
-													onClick={(e) => e.preventDefault()}
-												>
-													<img
-														height="48"
-														alt="..."
-														src={require("assets/img/couverture/9782081420250.jpg")}
-													/>
-												</a>
-											</Media>
-										</th>
-										<td><Link href="article">9782081420250</Link></td>
-										<td>Les trois femmes du consul</td>
-										<td>FLAMMARION</td>
-										<td align="right">09/10/2019</td>
-										<td>LIVRE</td>
-										<td align="right">5 000</td>
-										<td align="right">100 000</td>
+											<th scope="row">
+												<Media className="align-items-center">
+													<a
+														className=""
+														href="article"
+														onClick={(e) => e.preventDefault()}
+													>
+														<img
+															height="48"
+															alt="..."
+															src={require("assets/img/couverture/9782070455379.jpg")}
+														/>
+													</a>
+												</Media>
+											</th>
+											<td>9782070455379</td>
+											<td>Immortelle randonnée - Compostelle malgré moi</td>
+											<td>FOLIO</td>
+											<td align="right">02/10/2014</td>
+											<td>LIVRE</td>
+											<td align="right">8 000</td>
+											<td align="right">180 000</td>
 
-									</tr>
-									<tr>
-										<th scope="row">
-										</th>
-										<td><Link href="article">9782290005569</Link></td>
-										<td>Le parfum d'Adam</td>
-										<td>J'AI LU</td>
-										<td align="right">10/01/2007</td>
-										<td>LIVRE</td>
-										<td align="right">500</td>
-										<td align="right">10 000</td>
+										</tr>
+									</Link>
+									<Link href="article">
+										<tr>
+											<th scope="row">
+												<Media className="align-items-center">
+													<a
+														className=""
+														href="article"
+														onClick={(e) => e.preventDefault()}
+													>
+														<img
+															height="48"
+															alt="..."
+															src={require("assets/img/couverture/9782081420250.jpg")}
+														/>
+													</a>
+												</Media>
+											</th>
+											<td>9782081420250</td>
+											<td>Les trois femmes du consul</td>
+											<td>FLAMMARION</td>
+											<td align="right">09/10/2019</td>
+											<td>LIVRE</td>
+											<td align="right">5 000</td>
+											<td align="right">100 000</td>
 
-									</tr>
+										</tr>
+									</Link>
+									<Link href="article">
+										<tr>
+											<th scope="row">
+											</th>
+											<td>9782290005569</td>
+											<td>Le parfum d'Adam</td>
+											<td>J'AI LU</td>
+											<td align="right">10/01/2007</td>
+											<td>LIVRE</td>
+											<td align="right">500</td>
+											<td align="right">10 000</td>
+
+										</tr>
+									</Link>
 								</tbody>
 							</Table>
 							<CardFooter className="py-4">

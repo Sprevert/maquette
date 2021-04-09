@@ -6,9 +6,21 @@ import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 import { useRouter } from "next/router";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
-
+import routes from "routes.js";
+import { NavLink } from "reactstrap";
 
 function Sidebar(props) {
+	const router = useRouter();
+	const activeRoute = (routeName) => {
+		return router.route.indexOf(routeName) > -1;
+	};
+	const createLinks = (routes) => {
+		return routes.map((prop, key) => {
+			return (
+				<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>{prop.name}</Nav.Link>
+			);
+		});
+	};
 	return (
 		<Navbar collapseOnSelect expand="xl">
 			<Container fluid="xl">
@@ -20,10 +32,8 @@ function Sidebar(props) {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto">
-						<Nav.Link href="titres">Mes titres</Nav.Link>
-						<Nav.Link href="documents">Mes documents</Nav.Link>
-						<Nav.Link href="cessions">Mes cessions</Nav.Link>
-						<Nav.Link href="profile">Mon compte</Nav.Link>
+						
+						{createLinks(routes)}
 					</Nav>
 					<Nav>
 						<Media className="align-items-center">
