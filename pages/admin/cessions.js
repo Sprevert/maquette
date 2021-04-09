@@ -2,23 +2,13 @@ import React from "react";
 
 // reactstrap components
 import {
-	Badge,
 	Card,
+	Col,
 	CardHeader,
-	CardFooter,
-	DropdownMenu,
-	DropdownItem,
-	UncontrolledDropdown,
-	DropdownToggle,
-	Media,
-	Pagination,
-	PaginationItem,
-	PaginationLink,
-	Progress,
+	CardBody,
 	Table,
 	Container,
 	Row,
-	UncontrolledTooltip,
 } from "reactstrap";
 // layout for this page
 import Admin from "layouts/Admin.js";
@@ -35,8 +25,36 @@ function Cessions() {
 			<Container className="mt--7" fluid>
 				{/* Table */}
 				<Row>
-					<div className="col">
-					</div>
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+						<Card className="card-profile bg-secondary  shadow">
+							<CardHeader className="bg-white border-0">
+								<Row className="align-items-center">
+									<div className="col">
+										<h3 className="text-uppercase ls-1 mb-1">Mes prochaines cessions</h3>
+									</div>
+								</Row>
+							</CardHeader>
+							<CardBody className="p-0">
+								<Table className="align-items-center table-flush" responsive>
+									<thead className="thead-light">
+										<tr>
+											<th scope="col">Date</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>30 mai 2021</td>
+										</tr>
+
+										<tr>
+
+											<td>15 juin 2021</td>
+										</tr>
+									</tbody>
+								</Table>
+							</CardBody>
+						</Card>
+					</Col>
 				</Row>
 			</Container>
 		</>
