@@ -14,7 +14,7 @@ function Sidebar(props) {
 			<Container fluid="xl">
 				<Navbar.Brand href="#home">
 					<Link href="/">
-						<Image src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={50} width={100} />
+						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={50} width={100} />
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />

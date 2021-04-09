@@ -20,7 +20,7 @@ function Footer() {
 					<Nav className="nav-footer justify-content-center justify-content-xl-end">
 
 						<NavItem>
-							<Image src={require("assets/img/plumeo/GroupeMadrigall.webp")} alt="Groupe Madrigall" height={31} width={120} />
+							<img src={require("assets/img/plumeo/GroupeMadrigall.webp")} alt="Groupe Madrigall" height={31} width={120} />
 						</NavItem>
 
 					</Nav>
