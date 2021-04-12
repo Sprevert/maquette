@@ -36,20 +36,20 @@ function Sidebar(props) {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="mr-auto">
+					<Nav className="mr-auto topLinks">
 						{createLinks(routes)}
 					</Nav>
 					<Nav>
-						<Media className="align-items-center">
-							<Media className="mr-2">
-								<span>Jean Christophe Rufin</span>
-							</Media>
+						<Media className="align-items-center myProfile">
 							<span className="avatar">
 								<img
 									alt="Jean Christophe Rufin"
 									src={require("assets/img/theme/Rufin-195x195.jpg")}
 								/>
 							</span>
+							<Media className="m-2">
+								<span>Jean Christophe Rufin</span>
+							</Media>						
 
 						</Media>
 					</Nav>
