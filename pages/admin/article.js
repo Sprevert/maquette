@@ -109,10 +109,10 @@ function Documents() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h3 className="text-uppercase ls-1 mb-1">Mes Ventes</h3>
+										<h2 className="text-uppercase ls-1 mb-1">Mes Ventes</h2>
 									</div>
 									<div className="col">
-										<Nav className="justify-content-end" pills>
+										<Nav className="justify-content-end toggle" pills>
 											<NavItem>
 												<NavLink
 													className={classnames("py-2 px-3", {
@@ -173,7 +173,7 @@ function Documents() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h3 className="text-uppercase ls-1 mb-1">Mes Ventes GFK</h3>
+										<h2 className="text-uppercase ls-1 mb-1">Mes Ventes GFK</h2>
 									</div>
 								</Row>
 							</CardHeader>
@@ -197,7 +197,7 @@ function Documents() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h3 className="text-uppercase ls-1 mb-1">Stocks</h3>
+										<h2 className="text-uppercase ls-1 mb-1">Stocks</h2>
 									</div>
 								</Row>
 							</CardHeader>

@@ -27,7 +27,7 @@ function Sidebar(props) {
 		});
 	};
 	return (
-		<Navbar collapseOnSelect expand="xl" className="p-3">
+		<Navbar collapseOnSelect expand="lg" className="p-3">
 			<Container fluid="xl">
 				<Navbar.Brand href="#home">
 					<Link href="/">
