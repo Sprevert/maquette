@@ -66,7 +66,7 @@ function Documents() {
 									</div>
 								</Col>
 							</Row>
-							<CardBody className="pt-0 pt-md-6">
+							<CardBody className="pt-4">
 								<div className="text-center">
 									<Row>
 										<Col>
