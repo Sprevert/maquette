@@ -25,7 +25,7 @@ function numberWithSpaces(x) {
 export default function DataTable() {
 	return (
 		<React.Fragment>
-			<Table hover responsive>
+			<Table hover responsive className="titres">
 				<thead className="thead-light">
 					<tr>
 						<th colspan="2" className="fullTable">EAN</th>
@@ -42,7 +42,6 @@ export default function DataTable() {
 						<Link href="article">
 							<tr key={row.ean}>
 								<td><img
-									height="48"
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
