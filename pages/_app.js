@@ -8,6 +8,7 @@ import PageChange from "components/PageChange/PageChange.js";
 
 //import "assets/plugins/nucleo/css/nucleo.css";
 import "assets/css/plumeo.css";
+import "assets/css/bootstrap.4-6.min.css";
 import "assets/css/nextjs-argon-dashboard.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 //import "assets/scss/nextjs-argon-dashboard.scss";

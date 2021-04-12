@@ -1,4 +1,4 @@
-﻿/*eslint-disable*/
+﻿
 import React from "react";
 import Link from 'next/link'
 import Image from 'next/image'
@@ -17,7 +17,12 @@ function Sidebar(props) {
 	const createLinks = (routes) => {
 		return routes.map((prop, key) => {
 			return (
-				<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>{prop.name}</Nav.Link>
+				<Nav.Item>
+					<img src={require("assets/img/plumeo/Picto-" + prop.id + ".svg")} alt="Pluméo" height={31} width={80} />
+					<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
+						{prop.name}
+					</Nav.Link>
+				</Nav.Item>
 			);
 		});
 	};
@@ -32,7 +37,6 @@ function Sidebar(props) {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto">
-						
 						{createLinks(routes)}
 					</Nav>
 					<Nav>
