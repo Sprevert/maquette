@@ -1,4 +1,36 @@
-﻿import React from "react";
+﻿import Livres from "components/livres";
+import Admin from "layouts/Admin.js";
+import {
+	Row,
+	Card,
+	Container,
+} from "reactstrap";
+import Header from "components/Headers/Header.js";
+function Tables() {
+	return (
+		<>
+			<Header className="titres">
+				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span>Mes titres</span></h1></div>
+			</Header>
+			<Container className="mt--7 titres" fluid>
+				<Row>
+					<div className="col">
+						<Card className="shadow">
+							<Livres />
+						</Card>
+					</div>
+				</Row>
+			</Container>
+		</>
+	)
+}
+
+
+Tables.layout = Admin;
+
+export default Tables;
+
+/*import React from "react";
 import Link from 'next/link'
 
 // reactstrap components
@@ -32,9 +64,9 @@ function Tables() {
 			<Header className="titres">
 				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span>Mes titres</span></h1></div>
 			</Header>
-			{/* Page content */}
+			{}
 			<Container className="mt--7 titres" fluid>
-				{/* Table */}
+				{}
 				<Row>
 					<div className="col">
 						<Card className="shadow">
@@ -170,7 +202,7 @@ function Tables() {
 												onClick={(e) => e.preventDefault()}
 											>
 												1
-                      </PaginationLink>
+					  </PaginationLink>
 										</PaginationItem>
 										<PaginationItem>
 											<PaginationLink
@@ -186,7 +218,7 @@ function Tables() {
 												onClick={(e) => e.preventDefault()}
 											>
 												3
-                      </PaginationLink>
+					  </PaginationLink>
 										</PaginationItem>
 										<PaginationItem>
 											<PaginationLink
@@ -211,3 +243,4 @@ function Tables() {
 Tables.layout = Admin;
 
 export default Tables;
+*/
