@@ -46,7 +46,7 @@ export default function DataTable() {
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
 								<td className="fullTable">{row.ean}</td>
-								<td>{row.titre}<div className="mobileTable">{row.maison} {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
+								<td><div className="titresh1">{row.titre}</div><div className="mobileTable">{row.maison} {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
 								<td className="fullTable">{row.maison}</td>
 								<td className="fullTable">{row.parution}</td>
 								<td className="fullTable">{row.format}</td>
