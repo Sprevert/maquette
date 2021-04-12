@@ -1,5 +1,6 @@
 ﻿import React from 'react';
-import Table from 'react-bootstrap/Table'
+import Table from 'react-bootstrap/Table';
+import Link from 'next/link';
 const columns = [
 	{ field: 'ean', headerName: 'EAN', flex: 0.5 },
 	{ field: 'titre', headerName: 'Titre', flex: 1 },
@@ -38,20 +39,22 @@ export default function DataTable() {
 				</thead>
 				<tbody>
 					{rows.map((row) => (
-						<tr key={row.ean}>
-							<td><img
-								height="48"
-								alt="..."
-								src={require("assets/img/couverture/" + row.ean + ".jpg")}
-							/></td>
-							<td className="fullTable">{row.ean}</td>
-							<td>{row.titre}<div className="mobileTable">{row.maison} {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>							
-							<td className="fullTable">{row.maison}</td>
-							<td className="fullTable">{row.parution}</td>
-							<td className="fullTable">{row.format}</td>
-							<td className="fullTable" align="right">{numberWithSpaces(row.ventes2020)}</td>
-							<td className="fullTable" align="right">{numberWithSpaces(row.ventes)}</td>
-						</tr>
+						<Link href="article">
+							<tr key={row.ean}>
+								<td><img
+									height="48"
+									alt="..."
+									src={require("assets/img/couverture/" + row.ean + ".jpg")}
+								/></td>
+								<td className="fullTable">{row.ean}</td>
+								<td>{row.titre}<div className="mobileTable">{row.maison} {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
+								<td className="fullTable">{row.maison}</td>
+								<td className="fullTable">{row.parution}</td>
+								<td className="fullTable">{row.format}</td>
+								<td className="fullTable" align="right">{numberWithSpaces(row.ventes2020)}</td>
+								<td className="fullTable" align="right">{numberWithSpaces(row.ventes)}</td>
+							</tr>
+						</Link>
 					))}
 				</tbody>
 			</Table>
