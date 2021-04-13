@@ -4,10 +4,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Navbar, Nav, Media, Container } from 'react-bootstrap'
 import { useRouter } from "next/router";
-// nodejs library to set properties for components
-import { PropTypes } from "prop-types";
+import {
+	DropdownMenu,
+	DropdownItem,
+	UncontrolledDropdown,
+	DropdownToggle,
+} from "reactstrap";
 import routes from "routes.js";
-import { NavLink } from "reactstrap";
 
 function Sidebar(props) {
 	const router = useRouter();
@@ -40,22 +43,51 @@ function Sidebar(props) {
 						{createLinks(routes)}
 					</Nav>
 					<Nav>
-						<Media className="align-items-center myProfile">
-							<span className="avatar">
-								<img
-									alt="Jean Christophe Rufin"
-									src={require("assets/img/theme/Rufin-195x195.jpg")}
-								/>
-							</span>
-							<Media className="m-2">
-								<span>Jean Christophe Rufin</span>
-							</Media>						
+						<UncontrolledDropdown nav>
+							<DropdownToggle className="pr-0" nav>
+								<Media className="align-items-center myProfile">
+									<span className="avatar">
+										<img
+											alt="Jean Christophe Rufin"
+											src={require("assets/img/theme/Rufin-195x195.jpg")}
+										/>
+									</span>
+									<Media className="m-2">
+										<span>Jean Christophe Rufin</span>
+									</Media>
 
-						</Media>
+								</Media>
+							</DropdownToggle>
+							<DropdownMenu className="dropdown-menu-arrow" right>
+								<Link href="/admin/profile">
+									<DropdownItem>
+										<i className="fa fa-key fa-fw" />
+										<span>Mon compte</span>
+									</DropdownItem>
+								</Link>
+								<Link href="/admin/profile">
+									<DropdownItem>
+										<i className="fa fa-lock fa-fw" />
+										<span>Mot de passe</span>
+									</DropdownItem>
+								</Link>
+								<Link href="/admin/profile">
+									<DropdownItem>
+										<i className="fa fa-cogs fa-fw" />
+										<span>Préférences</span>
+									</DropdownItem>
+								</Link>
+								<DropdownItem divider />
+								<DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+									<i className="fa fa-sign-out fa-fw" />
+									<span>Déconnexion</span>
+								</DropdownItem>
+							</DropdownMenu>
+						</UncontrolledDropdown>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
-		</Navbar>
+		</Navbar >
 	);
 }
 

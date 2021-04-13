@@ -9,12 +9,12 @@ body { background-color: #E8EDE6 !important; }
 .documents.nav-link.active, .documents.nav-link:hover { border-bottom-color: #d3ba00; }
 .cessions.nav-link.active, .cessions.nav-link:hover { border-bottom-color: #7db4ff; }
 .compte.nav-link.active, .compte.nav-link:hover { border-bottom-color: #ff8a54; }
-.nav-item img { display: none; }
+.topLinks .nav-item img { display: none; }
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 
 @media (max-width: 960px) {
-	.collapse.show .nav-item img, .collapsing .nav-item img { display: inline; margin: 10px 5px; }
-	.collapse.show .nav-link, .collapsing .nav-link { display: inline; }
+	.collapse.show .topLinks .nav-item img, .collapsing .nav-item img { display: inline; margin: 10px 5px; }
+	.collapse.show .topLinks .nav-link, .collapsing .nav-link { display: inline; }
 	.myProfile { flex-direction: row; font-size: 110%; margin-top: 10px; }
 	.myProfile span { margin: 0 10px 0 20px; }
 	.navbar-nav.topLinks { border-top: 1px solid #1453b3; margin-top: 15px; padding-top: 10px; }

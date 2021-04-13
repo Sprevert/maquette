@@ -3799,7 +3799,7 @@ a.btn-icon-only { line-height: 2.5 }
 .dropdown, .dropup, .dropright, .dropleft { display: inline-block }
 .dropdown-menu { min-width: 12rem }
 .dropdown-menu .dropdown-item { padding: .5rem 1rem; font-size: .875rem }
-.dropdown-menu .dropdown-item > i, .dropdown-menu .dropdown-item > svg { margin-right: 1rem; font-size: 1rem; vertical-align: -17% }
+.dropdown-menu .dropdown-item > i, .dropdown-menu .dropdown-item > svg { margin-right: 1rem; font-size: 1rem;}
 .dropdown-header { padding-left: 1rem; padding-right: 1rem; color: #f6f9fc; font-size: .625rem; text-transform: uppercase; font-weight: 700 }
 .dropdown-menu a.media > div:first-child { line-height: 1 }
 .dropdown-menu a.media p { color: #8898aa }
