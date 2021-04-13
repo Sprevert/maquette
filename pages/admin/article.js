@@ -105,7 +105,7 @@ function Documents() {
 					</Col>
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
-						<Card className="card-profile bg-secondary  shadow">
+						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
@@ -169,7 +169,7 @@ function Documents() {
 					</Col>
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
-						<Card className="card-profile bg-secondary  shadow">
+						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
@@ -193,7 +193,7 @@ function Documents() {
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 
-						<Card className="card-profile bg-secondary  shadow">
+						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
@@ -222,11 +222,11 @@ function Documents() {
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 
-						<Card className="card-profile bg-secondary  shadow">
+						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h3 className="text-uppercase ls-1 mb-1">Liste des réimpressions</h3>
+										<h2 className="text-uppercase ls-1 mb-1">Liste des réimpressions</h2>
 									</div>
 								</Row>
 							</CardHeader>
