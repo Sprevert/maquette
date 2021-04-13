@@ -8,11 +8,11 @@ import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
 function Footer() {
 	return (
 		<footer className="footer">
-			<Row className="align-items-center justify-content-xl-between">
+			<Row className="align-items-center justify-content-xl-between pt-3">
 				<Col xl="6">
 					<div className="copyright text-center text-xl-left">
 						<span className="m-2">Mentions légales</span>
-						<span className="m-2">Groupe Madrigall{" "} {new Date().getFullYear()}</span>
+						<span className="m-2">© Groupe Madrigall{" "} {new Date().getFullYear()}</span>
 					</div>
 				</Col>
 

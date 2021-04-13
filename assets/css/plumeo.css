@@ -21,7 +21,7 @@ body { background-color: #E8EDE6 !important; }
 }
 
 .auth-content { background-color: #192866 !important; }
-.main-content { color: #fff; position: relative; background-color: #E8EDE6; padding-bottom: 20px; }
+.main-content { color: #fff; position: relative; background-color: #E8EDE6;}
 .main-content.home { background-color: #192866; }
 .content-header { background-image: url('/img/background/Madrigall-image-generique.jpg'); background-size: cover; background-position: center top; min-height: 300px; position: relative; }
 .content h1 { text-align: center; font-style: italic; }
@@ -76,7 +76,9 @@ body { background-color: #E8EDE6 !important; }
 }
 
 .editions { text-align: center; }
-.editions img { margin: 10px 15px; }
+.editions img { margin: 10px 15px;}
+.editions span { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; }
+.editions span.last {  border-right: none; }
 
 /* Table */
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
@@ -86,7 +88,7 @@ body { background-color: #E8EDE6 !important; }
 
 @media (max-width: 500px) {
 	.titresh1 { font-size: 120%; font-weight: bold; white-space: normal; }
-	.fullTable { display: none; }
+	.fullTable { display: none!important; }
 	.mobileTable { display: block; }
 	.titres td img { height: 90px; border-radius: 5px; }
 	.titres td { padding: 15px !important; }

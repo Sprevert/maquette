@@ -23,9 +23,12 @@ function Admin(props) {
 				return routes[i].name;
 			}
 		}
-		if (router.route.indexOf('/article')) return 'titres'
+		if (router.route.indexOf('admin/article')!=-1) return 'titres'
 		return "Accueil";
 	};
+	if (getBrandText() == 'Accueil') {
+		document.body.classList.add('bg-white');
+	}
 	return (
 		<>
 			<Sidebar
@@ -39,7 +42,6 @@ function Admin(props) {
 			/>
 			<div className={"main-content" + (getBrandText() == "Accueil" ? " home" : "")} ref={mainContentRef}>
 				{props.children}
-
 			</div>
 			<Container fluid>
 				<AdminFooter />

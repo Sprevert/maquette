@@ -28,8 +28,9 @@ export default function DataTable() {
 			<Table hover responsive className="titres">
 				<thead className="thead-light">
 					<tr>
-						<th colspan="2" className="fullTable">EAN</th>
+						<th className="fullTable">{ }</th>
 						<th className="fullTable">TITRE</th>
+						<th className="fullTable">EAN</th>
 						<th className="fullTable">MAISON</th>
 						<th className="fullTable">DATE DE PARUTION</th>
 						<th className="fullTable">FORMAT</th>
@@ -45,8 +46,8 @@ export default function DataTable() {
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
-								<td className="fullTable">{row.ean}</td>
 								<td><div className="titresh1">{row.titre}</div><div className="mobileTable">{row.maison} - {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
+								<td className="fullTable">{row.ean}</td>
 								<td className="fullTable">{row.maison}</td>
 								<td className="fullTable">{row.parution}</td>
 								<td className="fullTable">{row.format}</td>

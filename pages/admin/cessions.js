@@ -26,7 +26,7 @@ function Cessions() {
 				{/* Table */}
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
-						<Card className="card-profile bg-secondary  shadow">
+						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">

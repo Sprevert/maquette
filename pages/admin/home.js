@@ -13,7 +13,7 @@ const Dashboard = (props) => {
 		<>
 			<Header />
 			{/* Page content */}
-			<Container className="mt--7" fluid>
+			<Container className="pb-5" fluid>
 				<div className="page">
 					<div className="text-center">
 						<h1>Bienvenue<br />sur votre portail auteur</h1>
@@ -29,35 +29,39 @@ const Dashboard = (props) => {
 							</Card>
 						</Link>
 						<Link href="documents">
-						<Card className="logo documents">
-							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-documents.svg")} />
-							<Card.Body>
-								<Card.Title>Mes documents</Card.Title>
-							</Card.Body>
+							<Card className="logo documents">
+								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-documents.svg")} />
+								<Card.Body>
+									<Card.Title>Mes documents</Card.Title>
+								</Card.Body>
 							</Card></Link>
 						<Link href="cessions">
-						<Card className="logo cessions">
-							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-cessions.svg")} />
-							<Card.Body>
-								<Card.Title>Mes cessions</Card.Title>
-							</Card.Body>
+							<Card className="logo cessions">
+								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-cessions.svg")} />
+								<Card.Body>
+									<Card.Title>Mes cessions</Card.Title>
+								</Card.Body>
 							</Card></Link>
 						<Link href="profile">
-						<Card className="logo compte">
-							<Card.Img variant="top" src={require("assets/img/plumeo/Picto-compte.svg")} />
-							<Card.Body>
-								<Card.Title>Mon compte</Card.Title>
-							</Card.Body>
+							<Card className="logo compte">
+								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-compte.svg")} />
+								<Card.Body>
+									<Card.Title>Mon compte</Card.Title>
+								</Card.Body>
 							</Card></Link>
 					</div>
-					<div className="editions p-3">
-						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={30} />
-						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={30} />
-						<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={30} />
-						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={50} />
-					</div>
 				</div>
+
 			</Container>
+			<div className="editions p-3 bg-white">
+				<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={30} />
+				<span className="fullTable" />
+				<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={30} />
+				<span className="fullTable" />
+				<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={30} />
+				<span className="fullTable" />
+				<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={50} />
+		</div>
 		</>
 	);
 };
