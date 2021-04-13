@@ -9,13 +9,14 @@ body { background-color: #E8EDE6 !important; }
 .documents.nav-link.active, .documents.nav-link:hover { border-bottom-color: #d3ba00; }
 .cessions.nav-link.active, .cessions.nav-link:hover { border-bottom-color: #7db4ff; }
 .compte.nav-link.active, .compte.nav-link:hover { border-bottom-color: #ff8a54; }
-.topLinks .nav-item img { display: none; }
+.topLinks .nav-item { text-align: center; }
 .topLinks .nav-item{line-height:1.5;font-weight:600}
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 
 @media (max-width: 960px) {
-	.collapse.show .topLinks .nav-item img, .collapsing .topLinks .nav-item img { display: inline; margin: 10px 5px; }
-	.collapse.show .topLinks .nav-link, .collapsing .topLinks .nav-link { display: inline; }
+	.collapse.show .topLinks .nav-item, .collapsing .topLinks .nav-item { text-align: left; }
+	.collapse.show .topLinks .nav-item img, .collapsing .topLinks .nav-item img { display: inline; margin: 10px 0px 10px 15px; }
+	.collapse.show .topLinks .nav-link, .collapsing .topLinks .nav-link { display: inline;margin-left:10px; }
 	.myProfile { flex-direction: row; font-size: 110%; margin-top: 10px; }
 	.collapse.show .myProfile span, .collapsing .myProfile span { margin: 0 5px 0 15px; }
 	.navbar-nav.topLinks { border-top: 1px solid #1453b3; margin-top: 15px; padding-top: 10px; }

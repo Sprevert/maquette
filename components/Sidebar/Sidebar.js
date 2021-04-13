@@ -21,7 +21,7 @@ function Sidebar(props) {
 		return routes.map((prop, key) => {
 			return (
 				<Nav.Item key={"link" + prop.id}>
-					<img src={require("assets/img/plumeo/Picto-" + prop.id + ".svg")} alt="Pluméo" height={31} width={80} />
+					<img src={require("assets/img/plumeo/Picto-" + prop.id + "-B.svg")} className="mb-2" alt={prop.name} height={31} width={80} />
 					<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
 						{prop.name}
 					</Nav.Link>

@@ -10,8 +10,6 @@ function Header(props) {
                     backgroundImage:
                         "url(" + require("assets/img/theme/Madrigall-image-generique.jpg") + ")",
                     backgroundSize: "cover",
-                    backgroundPositionX: "center",
-                    backgroundPositionY: "-250px",
                 }}
             >
                 {props.children}
