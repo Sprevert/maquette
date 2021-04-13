@@ -20,7 +20,7 @@ function Sidebar(props) {
 	const createLinks = (routes) => {
 		return routes.map((prop, key) => {
 			return (
-				<Nav.Item>
+				<Nav.Item key={"link" + prop.id}>
 					<img src={require("assets/img/plumeo/Picto-" + prop.id + ".svg")} alt="Pluméo" height={31} width={80} />
 					<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
 						{prop.name}

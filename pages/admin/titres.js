@@ -10,7 +10,7 @@ function Tables() {
 	return (
 		<>
 			<Header className="titres">
-				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span>Mes titres</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span className="underline">Mes</span> titres</h1></div>
 			</Header>
 			<Container className="mt--7 titres" fluid>
 				<Row>

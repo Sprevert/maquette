@@ -22,11 +22,11 @@ function Documents() {
 	return (
 		<>
 			<Header className="documents">
-				<div><h1><img src={require("assets/img/plumeo/Picto-documents-blanc.svg")} /><span>Mes documents</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-documents-blanc.svg")} /><span className="underline">Mes</span> documents</h1></div>
 			</Header>
-			{/* Page content */}
+			
 			<Container className="mt--7" fluid>
-				{/* Table */}
+				
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow">
@@ -136,27 +136,27 @@ function Documents() {
 										<tr>
 											<td>Février 2021</td>
 											<td>5 Mars 2021</td>
-											<td class="text-success">456 €</td>
+											<td className="text-success">456 €</td>
 										</tr>
 										<tr>
 											<td>Janvier 2021</td>
 											<td>2 Févr. 2021</td>
-											<td class="text-success">350 €</td>
+											<td className="text-success">350 €</td>
 										</tr>
 										<tr>
 											<td>Décembre 2020</td>
 											<td>4 Janv. 2021</td>
-											<td class="text-success">650 €</td>
+											<td className="text-success">650 €</td>
 										</tr>
 										<tr>
 											<td>Novembre 2020</td>
 											<td>5 Déc. 2021</td>
-											<td class="text-success">250 €</td>
+											<td className="text-success">250 €</td>
 										</tr>
 										<tr>
 											<td>Octobre 2020</td>
 											<td>5 Nov. 2021</td>
-											<td class="text-success">415 €</td>
+											<td className="text-success">415 €</td>
 										</tr>
 									</tbody>
 								</Table>

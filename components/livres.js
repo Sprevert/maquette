@@ -40,8 +40,8 @@ export default function DataTable() {
 				</thead>
 				<tbody>
 					{rows.map((row) => (
-						<Link href="article">
-							<tr key={row.ean}>
+						<Link href="article" key={row.ean}>
+							<tr>
 								<td><img
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}

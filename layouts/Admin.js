@@ -7,6 +7,7 @@ import AdminFooter from "components/Footers/AdminFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
 import routes from "routes.js";
+import { useEffect } from 'react';
 
 function Admin(props) {
 	// used for checking current route
@@ -26,9 +27,12 @@ function Admin(props) {
 		if (router.route.indexOf('admin/article')!=-1) return 'titres'
 		return "Accueil";
 	};
-	if (getBrandText() == 'Accueil') {
-		document.body.classList.add('bg-white');
-	}
+	useEffect(() => {
+		if (getBrandText() == 'Accueil') {
+			document.body.classList.add('bg-white');
+		}
+	});
+	
 	return (
 		<>
 			<Sidebar

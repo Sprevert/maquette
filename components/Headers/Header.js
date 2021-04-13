@@ -1,8 +1,5 @@
 import React from "react";
 
-// reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
-
 function Header(props) {
     return (
         <>
@@ -13,7 +10,8 @@ function Header(props) {
                     backgroundImage:
                         "url(" + require("assets/img/theme/Madrigall-image-generique.jpg") + ")",
                     backgroundSize: "cover",
-                    backgroundPosition: "center top",
+                    backgroundPositionX: "center",
+                    backgroundPositionY: "-250px",
                 }}
             >
                 {props.children}

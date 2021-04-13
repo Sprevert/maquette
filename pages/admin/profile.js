@@ -22,7 +22,7 @@ function Profile() {
 	return (
 		<>
 			<Header className="compte">
-				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span>Mon compte auteur</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span className="underline">Mon</span> compte<span className="fullTable"> auteur</span></h1></div>
 			</Header>
 			{/* Page content */}
 			<Container className="mt--7" fluid>

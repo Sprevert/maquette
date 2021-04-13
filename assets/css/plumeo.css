@@ -10,6 +10,7 @@ body { background-color: #E8EDE6 !important; }
 .cessions.nav-link.active, .cessions.nav-link:hover { border-bottom-color: #7db4ff; }
 .compte.nav-link.active, .compte.nav-link:hover { border-bottom-color: #ff8a54; }
 .topLinks .nav-item img { display: none; }
+.topLinks .nav-item{line-height:1.5;font-weight:600}
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 
 @media (max-width: 960px) {
@@ -29,12 +30,12 @@ body { background-color: #E8EDE6 !important; }
 
 .header div { width: 100%; position: relative; text-align: center; }
 .header h1 img { height: 60px; margin-right: 10px; font-size: 24px; }
-.header h1 span { font-size: 50px; }
-.header h1 span:before { content: " "; width: 70px; border-bottom: 5px #fff solid; position: absolute; bottom: 20px; }
-.header.titres h1 span:before { border-bottom-color: #89d369; }
-.header.documents h1 span:before { border-bottom-color: #d3ba00; }
-.header.cessions h1 span:before { border-bottom-color: #7db4ff; }
-.header.compte h1 span:before { border-bottom-color: #ff8a54; }
+.header h1 { font-size: 50px; }
+.header h1 span.underline:before { content: " "; width: 70px; border-bottom: 5px #fff solid; position: absolute; top: 65px; }
+.header.titres h1 span.underline:before { border-bottom-color: #89d369; }
+.header.documents h1 span.underline:before { border-bottom-color: #d3ba00; }
+.header.cessions h1 span.underline:before { border-bottom-color: #7db4ff; }
+.header.compte h1 span.underline:before { border-bottom-color: #ff8a54; }
 .header.titres { border-bottom: 10px solid #89d369; }
 .header.documents { border-bottom: 10px solid #d3ba00; }
 .header.cessions { border-bottom: 10px solid #7db4ff; }
@@ -87,7 +88,7 @@ body { background-color: #E8EDE6 !important; }
 .titres td img { height: 50px; }
 
 @media (max-width: 500px) {
-	.titresh1 { font-size: 120%; font-weight: bold; white-space: normal; }
+	.titresh1 { font-size: 130%; font-weight: bold; white-space: normal; margin-bottom:5px;}
 	.fullTable { display: none!important; }
 	.mobileTable { display: block; }
 	.titres td img { height: 90px; border-radius: 5px; }

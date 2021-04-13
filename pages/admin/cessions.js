@@ -19,7 +19,7 @@ function Cessions() {
 	return (
 		<>
 			<Header className="cessions">
-				<div><h1><img src={require("assets/img/plumeo/Picto-cessions-blanc.svg")} /><span>Mes cessions</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-cessions-blanc.svg")} /><span className="underline">Mes</span> cessions</h1></div>
 			</Header>
 			{/* Page content */}
 			<Container className="mt--7" fluid>
