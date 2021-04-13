@@ -20,7 +20,7 @@ body { background-color: #E8EDE6 !important; }
 	.navbar-nav.topLinks { border-top: 1px solid #1453b3; margin-top: 15px; padding-top: 10px; }
 }
 
-
+.auth-content { background-color: #192866 !important; }
 .main-content { color: #fff; position: relative; background-color: #E8EDE6; padding-bottom: 20px; }
 .main-content.home { background-color: #192866; }
 .content-header { background-image: url('/img/background/Madrigall-image-generique.jpg'); background-size: cover; background-position: center top; min-height: 300px; position: relative; }
@@ -94,7 +94,7 @@ body { background-color: #E8EDE6 !important; }
 
 .card h1, .card h2 { color: #1453b3; }
 .card span, .card h3, .card h4, .card h5, .card h6, .card h7 { color: #000; }
-.toggle a.active { background-color: #1453b3!important; }
+.toggle a.active { background-color: #1453b3 !important; }
 .toggle .active span { color: #fff; }
 .toggle span { color: #1453b3; }
 
@@ -103,4 +103,4 @@ body { background-color: #E8EDE6 !important; }
 .card-article-image img { max-width: 200px; border-radius: 0.375rem; transform: translate(-50%, -30%); position: absolute; left: 50%; transition: all 0.15s ease; }
 .card-article-image img:hover { transform: translate(-50%, -33%); }
 
-.card-profile .card-body{margin-top:130px; color:#000;}
+.card-profile .card-body { margin-top: 130px; color: #000; }
