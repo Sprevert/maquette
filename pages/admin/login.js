@@ -5,11 +5,10 @@ import Link from 'next/link';
 import { Card, Button, Form, Container } from 'react-bootstrap';
 import Auth from "layouts/Auth.js";
 
-
+/*
 const Login = (props) => {
 	const loginSubmit = event => {
 		event.preventDefault() // don't redirect the page
-		window.location.href = "/admin/home";
 		// where we'll add our form logic
 	}
 	return (
@@ -25,7 +24,7 @@ const Login = (props) => {
 					<div className="row home justify-content-md-center mt-3">
 						<Card style={{ width: '22rem' }}>
 							<Card.Body className="text-center">
-								<Form onSubmit={loginSubmit} >
+								<Form onSubmit={loginSubmit}>
 									<Form.Group controlId="formBasicIdentifiant">
 										<Form.Control type="text" placeholder="Identifiant" />
 									</Form.Group>
@@ -34,7 +33,7 @@ const Login = (props) => {
 									</Form.Group>
 									<Button variant="primary" type="submit">
 										Valider
-					</Button>
+									</Button>
 								</Form>
 							</Card.Body>
 						</Card>
@@ -50,3 +49,34 @@ const Login = (props) => {
 Login.layout = Auth;
 
 export default Login;
+*/
+
+function Login() {
+	const registerUser = async event => {
+		event.preventDefault()
+
+		const res = await fetch(
+			'https://hooks.zapier.com/hooks/catch/123456/abcde',
+			{
+				body: JSON.stringify({
+					name: event.target.name.value
+				}),
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				method: 'POST'
+			}
+		)
+
+		const result = await res.json()
+		// result.user => 'Ada Lovelace'
+	}
+
+	return (
+		<form onSubmit={registerUser}>
+			<label htmlFor="name">Name</label>
+			<input id="name" name="name" type="text" autoComplete="name" required />
+			<button type="submit">Register</button>
+		</form>
+	)
+}

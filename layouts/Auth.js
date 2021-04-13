@@ -8,14 +8,12 @@ import routes from "routes.js";
 function Auth(props) {
 	return (
 		<>
-			<body>
-				<div className="auth-content">
-					{props.children}
-				</div>
-				<Container fluid>
-					<AdminFooter />
-				</Container>
-			</body>
+			<div className="auth-content">
+				{props.children}
+			</div>
+			<Container fluid>
+				<AdminFooter />
+			</Container>
 		</>
 	);
 }
