@@ -13,10 +13,10 @@ body { background-color: #E8EDE6 !important; }
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 
 @media (max-width: 960px) {
-	.collapse.show .topLinks .nav-item img, .collapsing .nav-item img { display: inline; margin: 10px 5px; }
-	.collapse.show .topLinks .nav-link, .collapsing .nav-link { display: inline; }
+	.collapse.show .topLinks .nav-item img, .collapsing .topLinks .nav-item img { display: inline; margin: 10px 5px; }
+	.collapse.show .topLinks .nav-link, .collapsing .topLinks .nav-link { display: inline; }
 	.myProfile { flex-direction: row; font-size: 110%; margin-top: 10px; }
-	.myProfile span { margin: 0 10px 0 20px; }
+	.collapse.show .myProfile span, .collapsing .myProfile span { margin: 0 5px 0 15px; }
 	.navbar-nav.topLinks { border-top: 1px solid #1453b3; margin-top: 15px; padding-top: 10px; }
 }
 
