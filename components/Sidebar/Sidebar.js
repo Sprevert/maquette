@@ -33,7 +33,7 @@ function Sidebar(props) {
 		<Navbar collapseOnSelect expand="lg" className="p-3">
 			<Container fluid="xl">
 				<Navbar.Brand href="#home">
-					<Link href="/">
+					<Link href="/admin/home">
 						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={61} width={160} />
 					</Link>
 				</Navbar.Brand>
