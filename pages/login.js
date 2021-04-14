@@ -2,7 +2,7 @@
 import Header from "components/Headers/Header.js";
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card, Button, Form, Container } from 'react-bootstrap';
+import { Card, Button, Form, Container, InputGroup, FormControl } from 'react-bootstrap';
 import Auth from "layouts/Auth.js";
 import { useEffect } from 'react';
 
@@ -30,15 +30,19 @@ const Login = (props) => {
 						<Card className="shadow">
 							<Card.Body className="text-center">
 								<Form onSubmit={loginSubmit} >
-									<Form.Group controlId="formBasicIdentifiant">
-										<Form.Control type="text" placeholder="Identifiant" />
-									</Form.Group>
-									<Form.Group controlId="formBasicPassword">
-										<Form.Control type="password" placeholder="Mot de passe" />
-									</Form.Group>
-									<Button variant="primary" type="submit">
-										Valider
-					</Button>
+									<InputGroup className="mb-2">
+										<InputGroup.Prepend>
+											<InputGroup.Text><i class="fa fa-fw fa-user" id="iconUser"></i></InputGroup.Text>
+										</InputGroup.Prepend>
+										<FormControl id="formBasicIdentifiant" placeholder="Identifiant" />
+									</InputGroup>
+									<InputGroup className="mb-2">
+										<InputGroup.Prepend>
+											<InputGroup.Text><i class="fa fa-fw fa-lock" id="iconUser"></i></InputGroup.Text>
+										</InputGroup.Prepend>
+										<FormControl id="formBasicPassword" type="password" placeholder="Mot de passe" />
+									</InputGroup>
+									<Button variant="primary" type="submit">Valider</Button>
 								</Form>
 							</Card.Body>
 						</Card>
