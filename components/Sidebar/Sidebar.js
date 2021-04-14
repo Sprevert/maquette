@@ -79,7 +79,7 @@ function Sidebar(props) {
 									</DropdownItem>
 								</Link>
 								<DropdownItem divider />
-								<DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+								<DropdownItem href="/login">
 									<i className="fa fa-sign-out fa-fw" />
 									<span>Déconnexion</span>
 								</DropdownItem>
