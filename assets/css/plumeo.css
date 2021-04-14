@@ -12,6 +12,7 @@ body.documents { background-color: #E9E9D4; }
 body.cessions { background-color: #E1E8ED; }
 body.compte { background-color: #EDE8E4; }
 .home h1 { font-family: Brygada1918; font-style: italic; font-size: 40px !important; font-weight: normal !important; line-height: 44px !important; }
+.home h2 { font-family: Brygada1918; font-style: italic; font-size: 34px !important; font-weight: normal !important; line-height: 38px !important; }
 /* navigation */
 
 .navbar-light { background-color: #fff !important; color: #1453b3 !important; }
@@ -69,7 +70,7 @@ x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 
 .page { margin-top: -280px; position: relative; color: #fff; }
 
-.page h1, .page p { text-align: center; font-family: Brygada1918;font-style:italic;}
+.page h1, .page p { text-align: center; font-family: Brygada1918;}
 .page h1 {font-size:40px;font-weight:normal;}
 .page p { max-width: 500px; margin: auto; }
 .page h1 img { vertical-align: middle; margin-right: 5px; }
@@ -101,6 +102,7 @@ x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 
 @media (max-width: 500px) {
 	.logo { width: 165px; }
+	.login .card { width: 350px!important; }
 }
 
 .editions { text-align: center; }
@@ -135,3 +137,5 @@ x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 .card-article-image img:hover { transform: translate(-50%, -33%); }
 
 .card-profile .card-body { margin-top: 130px; color: #000; }
+
+.login .card{width:500px;}

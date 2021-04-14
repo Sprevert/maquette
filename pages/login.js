@@ -22,12 +22,12 @@ const Login = (props) => {
 			<Container className="mt--7" fluid>
 				<div className="page">
 					<div className="text-center">
-						<h1><Image src={require("assets/img/plumeo/Logo-plumeo-blanc.svg")} alt="Pluméo" height={80} width={160} /></h1>
+						<h1><img src={require("assets/img/plumeo/Logo-plumeo-blanc.svg")} alt="Pluméo" height={80} width={160} /></h1>
 						<h2>Connectez-vous à votre portail auteur</h2>
 						<p>Accédez à tout moment et facilement aux informations concernant votre relation éditeur.</p>
 					</div>
-					<div className="row home justify-content-md-center mt-3">
-						<Card style={{ width: '22rem' }}>
+					<div className="row login justify-content-md-center mt-3">
+						<Card className="shadow">
 							<Card.Body className="text-center">
 								<Form onSubmit={loginSubmit} >
 									<Form.Group controlId="formBasicIdentifiant">
