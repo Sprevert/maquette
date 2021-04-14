@@ -1,14 +1,22 @@
 
+@font-face { font-family: 'Asap'; src: url('../fonts/Asap-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Asap'; src: url('../fonts/Asap-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Brygada1918'; src: url('../fonts/Brygada1918-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Brygada1918'; src: url('../fonts/Brygada1918-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Brygada1918'; src: url('../fonts/Brygada1918-Italic.ttf') format('truetype'); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'Brygada1918'; src: url('../fonts/Brygada1918-BoldItalic.ttf') format('truetype'); font-weight: bold; font-style: italic; }
+
 body.home { background-color: #ffffff; }
 body.titres { background-color: #E8EDE6; }
 body.documents { background-color: #E9E9D4; }
 body.cessions { background-color: #E1E8ED; }
 body.compte { background-color: #EDE8E4; }
-
+.home h1 { font-family: Brygada1918; font-style: italic; font-size: 40px !important; font-weight: normal !important; line-height: 44px !important; }
 /* navigation */
 
 .navbar-light { background-color: #fff !important; color: #1453b3 !important; }
-.navbar-light .nav-link { color: #1453b3 !important; padding: 0px !important; margin: 0 1em; border-bottom: 3px solid #fff; }x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
+.navbar-light .nav-link { color: #1453b3 !important; padding: 0px !important; margin: 0 1em; border-bottom: 3px solid #fff; }
+x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 .topLinks .nav-item { text-align: center; line-height: 1.5; font-weight: 600; cursor: pointer; }
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 #responsive-navbar-nav { margin-left: 3%; }
@@ -60,7 +68,9 @@ body.compte { background-color: #EDE8E4; }
 .titres tr:hover { background-color: #f6f9fc; }
 
 .page { margin-top: -280px; position: relative; color: #fff; }
-.page h1, .page p { text-align: center; }
+
+.page h1, .page p { text-align: center; font-family: Brygada1918;font-style:italic;}
+.page h1 {font-size:40px;font-weight:normal;}
 .page p { max-width: 500px; margin: auto; }
 .page h1 img { vertical-align: middle; margin-right: 5px; }
 

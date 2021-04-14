@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, Button, Form, Container } from 'react-bootstrap';
 import Auth from "layouts/Auth.js";
+import { useEffect } from 'react';
 
 
 const Login = (props) => {
@@ -12,6 +13,9 @@ const Login = (props) => {
 		window.location.href = "/admin/home";
 		// where we'll add our form logic
 	}
+	useEffect(() => {
+		document.body.className = 'home';
+	});
 	return (
 		<>
 			<Header />
