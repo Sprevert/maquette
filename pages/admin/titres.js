@@ -12,7 +12,7 @@ function Tables() {
 			<Header className="titres">
 				<div><h1><img src={require("assets/img/plumeo/Picto-titres-blanc.svg")} /><span className="underline">Mes</span> titres</h1></div>
 			</Header>
-			<Container className="mt--7 titres" fluid>
+			<Container className="titres" fluid>
 				<Row>
 					<div className="col">
 						<Card className="shadow">

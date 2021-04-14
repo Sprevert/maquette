@@ -25,7 +25,7 @@ function Documents() {
 				<div><h1><img src={require("assets/img/plumeo/Picto-documents-blanc.svg")} /><span className="underline">Mes</span> documents</h1></div>
 			</Header>
 			
-			<Container className="mt--7" fluid>
+			<Container className="documents" fluid>
 				
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">

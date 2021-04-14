@@ -68,10 +68,11 @@ x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 .header.documents h1 span.underline:before, .topLinks .nav-link.documents:before { border-bottom-color: #d3ba00; }
 .header.cessions h1 span.underline:before, .topLinks .nav-link.cessions:before { border-bottom-color: #7db4ff; }
 .header.compte h1 span.underline:before, .topLinks .nav-link.compte:before { border-bottom-color: #ff8a54; }
-.header.titres { border-bottom: 10px solid #89d369; }
-.header.documents { border-bottom: 10px solid #d3ba00; }
-.header.cessions { border-bottom: 10px solid #7db4ff; }
-.header.compte { border-bottom: 10px solid #ff8a54; }
+div.titres.container-fluid, div.cessions.container-fluid, div.compte.container-fluid, div.documents.container-fluid { margin-top: -150px; }
+.header.titres { border-bottom: 14px solid #89d369; }
+.header.documents { border-bottom: 14px solid #d3ba00; }
+.header.cessions { border-bottom: 14px solid #7db4ff; }
+.header.compte { border-bottom: 14px solid #ff8a54; }
 
 .titres tr td { cursor: pointer; }
 .titres tr th { font-weight: bold; }
@@ -124,10 +125,11 @@ x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 .cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
 .mobileTable { display: none; }
 .titres td img { height: 70px; }
-.titres td { vertical-align: middle !important; }
+.titres td { vertical-align: middle !important; color:#000;}
+.titresh1 { font-weight: bold;  }
 
 @media (max-width: 500px) {
-	.titresh1 { font-size: 140%; font-weight: bold; white-space: normal; margin-bottom: 5px; }
+	.titresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }
 	.fullTable { display: none !important; }
 	.mobileTable { display: block; }
 	.titres td img { height: 110px; border-radius: 5px; }

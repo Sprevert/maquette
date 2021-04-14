@@ -48,7 +48,7 @@ function Documents() {
 			<Header className="titres" />
 
 			{/* Page content */}
-			<Container className="mt--7" fluid>
+			<Container className="titres" fluid>
 				{/* Table */}
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">

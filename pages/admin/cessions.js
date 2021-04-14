@@ -22,7 +22,7 @@ function Cessions() {
 				<div><h1><img src={require("assets/img/plumeo/Picto-cessions-blanc.svg")} /><span className="underline">Mes</span> cessions</h1></div>
 			</Header>
 			{/* Page content */}
-			<Container className="mt--7" fluid>
+			<Container className="cessions" fluid>
 				{/* Table */}
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
