@@ -21,8 +21,9 @@ function Sidebar(props) {
 		return routes.map((prop, key) => {
 			return (
 				<Nav.Item key={"link" + prop.id}>
-					<img src={require("assets/img/plumeo/Picto-" + prop.id + "-B.svg")} className="mb-2" alt={prop.name} height={31} width={80} />
+					
 					<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
+						<img src={require("assets/img/plumeo/Picto-" + prop.id + "-B.svg")} className="mb-2" alt={prop.name} height={31} width={80} />
 						{prop.name}
 					</Nav.Link>
 				</Nav.Item>
@@ -31,7 +32,7 @@ function Sidebar(props) {
 	};
 	return (
 		<Navbar collapseOnSelect expand="lg" className="p-3">
-			<Container fluid="xl">
+			<Container fluid="fluid">
 				<Navbar.Brand href="#home">
 					<Link href="/admin/home">
 						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={61} width={160} />

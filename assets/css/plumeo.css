@@ -9,23 +9,34 @@ body { background-color: #E8EDE6 !important; }
 .documents.nav-link.active, .documents.nav-link:hover { border-bottom-color: #d3ba00; }
 .cessions.nav-link.active, .cessions.nav-link:hover { border-bottom-color: #7db4ff; }
 .compte.nav-link.active, .compte.nav-link:hover { border-bottom-color: #ff8a54; }*/
-.topLinks .nav-item { text-align: center; }
-.topLinks .nav-item{line-height:1.5;font-weight:600}
+.topLinks .nav-item { text-align: center; line-height: 1.5; font-weight: 600; cursor: pointer; }
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
-.topLinks .nav-link { position:relative;}
-.topLinks .nav-link:before { content: " "; width: 25px; border-bottom: 3px #000 solid; position: absolute; top: 21px; display:none;}
-.topLinks .nav-link.active:before, .topLinks .nav-link:hover:before { width: 100%; display: inline-block!important; }
-@media (max-width: 960px) { .collapse.show .topLinks .nav-item, .collapsing .topLinks .nav-item { text-align: left; }
-	.collapse.show .topLinks .nav-item img, .collapsing .topLinks .nav-item img { display: inline; margin: 10px 0px 10px 15px; }
-	.collapse.show .topLinks .nav-link, .collapsing .topLinks .nav-link { display: inline;margin-left:10px; }
-	.collapse.show .topLinks .nav-link:before, .collapsing .topLinks .nav-link:before{display:inline-block;}
+#responsive-navbar-nav { margin-left: 3%; }
+.topLinks .nav-link { position: relative; text-align: center; white-space: nowrap; }
+.topLinks .nav-link img { display: block; margin: auto; }
+.topLinks .nav-link:before { content: " "; width: 25px; border-bottom: 3px #000 solid; position: absolute; left: 0px; top: 60px; display: none; }
+.topLinks .nav-link.active:before, .topLinks .nav-link:hover:before { width: 100%; display: inline-block !important; }
+
+@media (max-width: 1050px) {
+	.topLinks .nav-item { font-size:90%;}
+}
+
+@media (max-width: 991px) {
+	#responsive-navbar-nav { margin-left: 0; }
+	.topLinks .nav-link:before { left: 96px; top: 21px; display: none; }
+	.topLinks .nav-link.active:before, .topLinks .nav-link:hover:before { width: 50px; display: inline-block !important; }
+	.topLinks .nav-link img { display: inline; }
+	.collapse.show .topLinks .nav-item, .collapsing .topLinks .nav-item { text-align: left; margin: 0px; font-size: 100% }
+	.collapse.show .topLinks .nav-item img, .collapsing .topLinks .nav-item img { display: inline; margin: 10px 8px 10px 7px; }
+	.collapse.show .topLinks .nav-link, .collapsing .topLinks .nav-link { display: inline; margin-left: 10px; }
+	.collapse.show .topLinks .nav-link:before, .collapsing .topLinks .nav-link:before { display: inline-block; }
 	.myProfile { flex-direction: row; font-size: 110%; margin-top: 10px; }
 	.collapse.show .myProfile span, .collapsing .myProfile span { margin: 0 5px 0 15px; }
 	.navbar-nav.topLinks { border-top: 1px solid #1453b3; margin-top: 15px; padding-top: 10px; }
 }
 
 .auth-content { background-color: #192866 !important; }
-.main-content { color: #fff; position: relative; background-color: #E8EDE6;}
+.main-content { color: #fff; position: relative; background-color: #E8EDE6; }
 .main-content.home { background-color: #192866; }
 .content-header { background-image: url('/img/background/Madrigall-image-generique.jpg'); background-size: cover; background-position: center top; min-height: 300px; position: relative; }
 .content h1 { text-align: center; font-style: italic; }
@@ -80,9 +91,9 @@ body { background-color: #E8EDE6 !important; }
 }
 
 .editions { text-align: center; }
-.editions img { margin: 10px 15px;}
+.editions img { margin: 10px 15px; }
 .editions span { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; }
-.editions span.last {  border-right: none; }
+.editions span.last { border-right: none; }
 
 /* Table */
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
@@ -91,8 +102,8 @@ body { background-color: #E8EDE6 !important; }
 .titres td img { height: 50px; }
 
 @media (max-width: 500px) {
-	.titresh1 { font-size: 130%; font-weight: bold; white-space: normal; margin-bottom:5px;}
-	.fullTable { display: none!important; }
+	.titresh1 { font-size: 130%; font-weight: bold; white-space: normal; margin-bottom: 5px; }
+	.fullTable { display: none !important; }
 	.mobileTable { display: block; }
 	.titres td img { height: 90px; border-radius: 5px; }
 	.titres td { padding: 15px !important; }

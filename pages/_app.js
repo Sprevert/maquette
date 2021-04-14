@@ -57,9 +57,9 @@ export default class MyApp extends App {
 					/>
 					<title>Pluméo : Votre portail auteur</title>
 					<meta name="description" content="Plumeo, votre portail auteur." />
-					<link rel="apple-touch-icon" sizes="180x180" href={require("assets/img/plumeo/apple-touch-icon.png")} />
-					<link rel="icon" type="image/png" sizes="32x32" href={require("assets/img/plumeo/favicon-32x32.png")} />
-					<link rel="icon" type="image/png" sizes="16x16" href={require("assets/img/plumeo/favicon-16x16.png")} />
+					<link rel="icon" type="image/svg+xml" href={require("assets/img/plumeo/favicon.svg")} />
+					<link rel="alternate icon" href={require("assets/img/plumeo/favicon.ico")} />
+					<link rel="mask-icon" href={require("assets/img/plumeo/favicon.svg")} color="#ffffff" />
 				</Head>
 				<Layout>
 					<Component {...pageProps} />
