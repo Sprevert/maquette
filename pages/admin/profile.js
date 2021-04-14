@@ -74,7 +74,7 @@ function Profile() {
 							<CardBody>
 								<Form>
 									<h6 className="heading-small text-muted mb-4">
-										Auteur information
+										Information auteur
                   </h6>
 									<div className="pl-lg-4">
 										<Row>
