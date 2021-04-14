@@ -54,6 +54,7 @@ const Dashboard = (props) => {
 
 			</Container>
 			<div className="editions p-3 bg-white">
+				<span className="fullTable" />
 				<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} />
 				<span className="fullTable" />
 				<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} />
@@ -61,6 +62,7 @@ const Dashboard = (props) => {
 				<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} />
 				<span className="fullTable" />
 				<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} />
+				<span className="fullTable" />
 		</div>
 		</>
 	);

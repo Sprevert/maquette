@@ -47,8 +47,8 @@ const Login = (props) => {
 							</Card.Body>
 						</Card>
 					</div>
-					<div className="text-center pt-2"><Link href="./"><a className="text-white">Mot de passe oublié</a></Link></div>
-					<div className="text-center pt-2 pb-4"><Link href="./"><a className="text-white">Demandez votre accès</a></Link></div>
+					<div className="text-center pt-4"><Link href="./"><a className="text-white">Mot de passe oublié</a></Link></div>
+					<div className="text-center pt-3 pb-4"><Link href="./"><a className="text-white">Demandez votre accès</a></Link></div>
 				</div>
 			</Container>
 		</ >
