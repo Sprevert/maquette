@@ -24,13 +24,20 @@ function Admin(props) {
 				return routes[i].name;
 			}
 		}
-		if (router.route.indexOf('admin/article')!=-1) return 'titres'
+		if (router.route.indexOf('admin/article') != -1) return 'titres'
 		return "Accueil";
 	};
-	useEffect(() => {
-		if (getBrandText() == 'Accueil') {
-			document.body.classList.add('bg-white');
+	const getID = () => {
+		for (let i = 0; i < routes.length; i++) {
+			if (router.route.indexOf(routes[i].layout + routes[i].path) !== -1) {
+				return routes[i].id;
+			}
 		}
+		if (router.route.indexOf('admin/article') != -1) return 'titres'
+		return "home";
+	};
+	useEffect(() => {
+		document.body.className = getID();
 	});
 	
 	return (

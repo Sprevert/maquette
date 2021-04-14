@@ -42,7 +42,7 @@ export default function DataTable() {
 					{rows.map((row) => (
 						<Link href="article" key={row.ean}>
 							<tr>
-								<td><img
+								<td className="p-1" align="center"><img
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
