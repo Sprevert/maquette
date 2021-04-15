@@ -23,6 +23,7 @@ import Header from "components/Headers/TitreHeader.js";
 import {
 	chartOptions,
 	parseOptions,
+	chartExample1,
 	chartVente1,
 	chartVente2,
 } from "variables/charts.js";
@@ -30,6 +31,7 @@ import {
 function Documents() {
 	const [activeNav, setActiveNav] = React.useState(1);
 	const [chartVente1Data, setchartVente1Data] = React.useState("data1");
+	const [chartExample1Data, setChartExample1Data] = React.useState("data1");
 	if (window.Chart) {
 		parseOptions(Chart, chartOptions());
 	}
@@ -217,12 +219,12 @@ function Documents() {
 								</div>
 								<div className="text-center">
 									<div className="chart">
-										<Bar
-											data={chartVente2.data}
-											options={chartVente2.options}
+										<Line
+											data={chartExample1[chartExample1Data]}
+											options={chartExample1.options}
+											getDatasetAtEvent={(e) => console.log(e)}
 										/>
 									</div>
-
 								</div>
 							</CardBody>
 						</Card>
