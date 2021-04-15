@@ -311,7 +311,7 @@ let Stock1 = {
 					ticks: {
 						callback: function (value) {
 							if (!(value % 10)) {
-								return "" + value + "0";
+								return "" + value ;
 							}
 						},
 					},
