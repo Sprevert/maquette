@@ -32,13 +32,13 @@ const Login = (props) => {
 								<Form onSubmit={loginSubmit} >
 									<InputGroup className="mb-2">
 										<InputGroup.Prepend>
-											<InputGroup.Text><i class="fa fa-fw fa-user" id="iconUser"></i></InputGroup.Text>
+											<InputGroup.Text><i className="fa fa-fw fa-user" id="iconUser"></i></InputGroup.Text>
 										</InputGroup.Prepend>
 										<FormControl id="formBasicIdentifiant" placeholder="Identifiant" />
 									</InputGroup>
 									<InputGroup className="mb-2">
 										<InputGroup.Prepend>
-											<InputGroup.Text><i class="fa fa-fw fa-lock" id="iconUser"></i></InputGroup.Text>
+											<InputGroup.Text><i className="fa fa-fw fa-lock" id="iconUser"></i></InputGroup.Text>
 										</InputGroup.Prepend>
 										<FormControl id="formBasicPassword" type="password" placeholder="Mot de passe" />
 									</InputGroup>
@@ -47,8 +47,8 @@ const Login = (props) => {
 							</Card.Body>
 						</Card>
 					</div>
-					<div className="text-center pt-4"><Link href="./"><a className="text-white">Mot de passe oublié</a></Link></div>
-					<div className="text-center pt-3 pb-4"><Link href="./"><a className="text-white">Demandez votre accès</a></Link></div>
+					<div className="text-center pt-4"><Link href="/"><a className="text-white">Mot de passe oublié</a></Link></div>
+					<div className="text-center pt-3 pb-4"><Link href="/"><a className="text-white">Demandez votre accès</a></Link></div>
 				</div>
 			</Container>
 		</ >
