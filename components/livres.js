@@ -34,8 +34,8 @@ export default function DataTable() {
 						<th className="fullTable">MAISON</th>
 						<th className="fullTable">DATE DE PARUTION</th>
 						<th className="fullTable">FORMAT</th>
-						<th className="text-right" className="fullTable">VENTES 2020</th>
-						<th className="text-right" className="fullTable">VENTES DEPUIS PARUTION</th>
+						<th className="text-right fullTable">VENTES 2020</th>
+						<th className="text-right fullTable">VENTES DEPUIS PARUTION</th>
 					</tr>
 				</thead>
 				<tbody>

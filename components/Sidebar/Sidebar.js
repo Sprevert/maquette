@@ -17,12 +17,18 @@ function Sidebar(props) {
 	const activeRoute = (routeName) => {
 		return router.route.indexOf(routeName) > -1;
 	};
+	function navHover(show, id) {
+		if (props.isHome) {
+			if (show) document.getElementById('logo' + id).classList.add('active');
+			if (!show) document.getElementById('logo' + id).classList.remove('active');
+		}
+	}
 	const createLinks = (routes) => {
 		return routes.map((prop, key) => {
 			return (
-				<Nav.Item key={"link" + prop.id}>
-					
-					<Nav.Link key={key} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
+				<Nav.Item key={"nav" + prop.id} onMouseEnter={() => navHover(true, prop.id)} onMouseLeave={() => navHover(false, prop.id)} >
+
+					<Nav.Link key={"link" + key} id={"link" + prop.id} href={prop.layout + prop.path} className={prop.id} active={activeRoute(prop.layout + prop.path)}>
 						<img src={require("assets/img/plumeo/Picto-" + prop.id + "-B.svg")} className="mb-2" alt={prop.name} height={31} width={80} />
 						{prop.name}
 					</Nav.Link>

@@ -106,8 +106,8 @@ div.compte.container-fluid { margin-top: -100px; }
 .logo .card-body { padding: 5px; }
 .logo .card-title { font-size: 18px; font-weight: bold; }
 .logo { transition: all 0.2s }
-.logo:hover img { height: 90px; margin: 5px auto; transition: all 0.2s }
-.logo:hover { box-shadow: 4px 4px 10px #000; }
+.logo.active img, .logo:hover img { height: 90px; margin: 5px auto; transition: all 0.2s }
+.logo.active, .logo:hover { box-shadow: 4px 4px 10px #000; }
 
 /*.logo:hover { box-shadow: 4px 4px 10px #000; transform: translate(-5px, -5px); }*/
 .logo.titres { border-bottom-color: #89d369; }
@@ -132,11 +132,11 @@ div.compte.container-fluid { margin-top: -100px; }
 .editions li:before { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
 .editions li.last:after { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
 
-.editions .carousel-item {height:40px;vertical-align:middle;}
+.editions .carousel-item { height: 40px; vertical-align: middle; }
 
 @media (min-width: 600px) {
 	.editions ul { display: block; }
-	.editions .carousel { display: none; }	
+	.editions .carousel { display: none; }
 }
 
 /* Table */
