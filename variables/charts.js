@@ -299,7 +299,7 @@ function parseOptions(parent, options) {
 }
 
 // Example 1 of Chart inside src/views/Index.js (Sales value - Card)
-let chartExample1 = {
+let Stock1 = {
 	options: {
 		scales: {
 			yAxes: [
@@ -329,7 +329,7 @@ let chartExample1 = {
 						content += label;
 					}
 
-					content += yLabel + "0";
+					content += yLabel ;
 					return content;
 				},
 			},
@@ -337,11 +337,11 @@ let chartExample1 = {
 	},
 	data1: (canvas) => {
 		return {
-			labels: ["Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+			labels: ["Août", "Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars"],
 			datasets: [
 				{
-					label: "Performance",
-					data: [40, 20, 10, 30, 15, 40, 20, 60, 60],
+					label: "Stock à la vente",
+					data: [6000, 5100, 5200, 4500,6002,9201, 8503, 7659],
 				},
 			],
 		};
@@ -351,8 +351,8 @@ let chartExample1 = {
 			labels: ["S-7", "S-6", "S-5", "S-4", "S-3", "S-2", "S-1", "S"],
 			datasets: [
 				{
-					label: "Performance",
-					data: [20, 10, 5, 25, 15, 20, 10, 5, 15],
+					label: "Stock à la vente",
+					data: [9201, 9000, 8650, 8510, 8503, 8350, 8100, 7805, 7659],
 				},
 			],
 		};
@@ -516,7 +516,7 @@ let chartVente2 = {
 module.exports = {
 	chartOptions, // used inside src/views/Index.js
 	parseOptions, // used inside src/views/Index.js
-	chartExample1, // used inside src/views/Index.js
+	Stock1, // used inside src/views/Index.js
 	chartExample2, // used inside src/views/Index.js
 	chartVente1, // used inside src/views/Article.js
 	chartVente2, // used inside src/views/Article.js
