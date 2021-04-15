@@ -30,7 +30,7 @@ function Cessions() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h3 className="text-uppercase ls-1 mb-1">Mes prochaines cessions</h3>
+										<h3 className="text-uppercase ls-1 mb-1">Mes cessions</h3>
 									</div>
 								</Row>
 							</CardHeader>

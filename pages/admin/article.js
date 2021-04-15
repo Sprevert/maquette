@@ -215,6 +215,15 @@ function Documents() {
 										</Col>
 									</Row>
 								</div>
+								<div className="text-center">
+									<div className="chart">
+										<Bar
+											data={chartVente2.data}
+											options={chartVente2.options}
+										/>
+									</div>
+
+								</div>
 							</CardBody>
 						</Card>
 					</Col>
