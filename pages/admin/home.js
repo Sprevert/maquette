@@ -76,7 +76,7 @@ export default function Home(props) {
 					<li><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} /></li>
 					<li><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} /></li>
 					<li><img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} /></li>
-					<li className="last"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} /></li>
+					<li className="last"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={35} /></li>
 				</ul>
 
 			</div>
