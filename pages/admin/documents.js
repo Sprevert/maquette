@@ -24,9 +24,9 @@ function Documents() {
 			<Header className="documents">
 				<div><h1><img src={require("assets/img/plumeo/Picto-documents-blanc.svg")} /><span className="underline">Mes</span> documents</h1></div>
 			</Header>
-			
+
 			<Container className="documents" fluid>
-				
+
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow">
@@ -43,20 +43,28 @@ function Documents() {
 										<tr>
 											<th scope="col">Contrat</th>
 											<th scope="col">Date</th>
-											<th scope="col">Téléchargement</th>
+											<th scope="col">{" "}</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>Contrat d'édition Gallimard</td>
-											<td>15 Janv. 2020</td>
-											<td></td>
-										</tr>
 
 										<tr>
 											<td>Contrat d'édition Gallimard</td>
+											<td>15 Janv. 2020</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
+										</tr>
+										<tr>
+											<td>Contrat d'édition Gallimard</td>
 											<td>1 mai 2020</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 									</tbody>
 								</Table>
@@ -79,34 +87,54 @@ function Documents() {
 										<tr>
 											<th scope="col">Relevé</th>
 											<th scope="col">Date</th>
-											<th scope="col">Téléchargement</th>
+											<th scope="col">{" "}</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>Année 2020</td>
 											<td>1 Janv. 2021</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td>2e semestre 2020</td>
 											<td>1 Janv. 2021</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td>1er semestre 2020</td>
 											<td>1 Juil. 2020</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td>Année 2019</td>
 											<td>1 Janv. 2020</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td>2e semestre 2020</td>
 											<td>1 Janv. 2020</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 									</tbody>
 								</Table>
@@ -180,14 +208,18 @@ function Documents() {
 										<tr>
 											<th scope="col">Document</th>
 											<th scope="col">Date</th>
-											<th scope="col">Téléchargement</th>
+											<th scope="col">{" "}</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>DADS 2020</td>
 											<td>1 Janv. 2021</td>
-											<td></td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 									</tbody>
 								</Table>
