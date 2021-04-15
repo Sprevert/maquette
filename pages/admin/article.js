@@ -28,7 +28,7 @@ import {
 	chartVente2,
 } from "variables/charts.js";
 
-function Documents() {
+function Article() {
 	const [activeNav, setActiveNav] = React.useState(1);
 	const [activeStockNav, setActiveStockNav] = React.useState(1);
 	const [chartVente1Data, setchartVente1Data] = React.useState("data1");
@@ -265,7 +265,7 @@ function Documents() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h2 className="text-uppercase ls-1 mb-1">Evolution des stocks</h2>
+										<h2 className="text-uppercase ls-1 mb-1">évolution des stocks</h2>
 									</div>
 									<div className="col">
 										<Nav className="justify-content-end toggle" pills>
@@ -321,6 +321,6 @@ function Documents() {
 	);
 }
 
-Documents.layout = Admin;
+Article.layout = Admin;
 
-export default Documents;
+export default Article;
