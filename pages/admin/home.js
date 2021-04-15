@@ -63,19 +63,17 @@ export default function Home(props) {
 				<Carousel indicators={false} interval={3000} controls={false}>
 					<Carousel.Item className="text-center">
 						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} />
-					</Carousel.Item>
-					<Carousel.Item className="text-center">
+						<span >{" "}</span>
 						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} />
 					</Carousel.Item>
 					<Carousel.Item className="text-center">
 						<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} />
-					</Carousel.Item>
-					<Carousel.Item className="text-center">
+						<span />
 						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} />
 					</Carousel.Item>
 				</Carousel>
 				<ul>
-					<li><span className="fullTable" /><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} /></li>
+					<li><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} /></li>
 					<li><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} /></li>
 					<li><img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} /></li>
 					<li className="last"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} /></li>
