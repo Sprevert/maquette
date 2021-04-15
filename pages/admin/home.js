@@ -3,7 +3,7 @@ import Link from 'next/link'
 // layout for this page
 import Admin from "layouts/Admin.js";
 
-import { Card, Container } from 'react-bootstrap'
+import { Card, Container, Carousel } from 'react-bootstrap'
 
 import Header from "components/Headers/Header.js";
 
@@ -53,17 +53,30 @@ const Dashboard = (props) => {
 				</div>
 
 			</Container>
+
 			<div className="editions p-3 bg-white">
-				<span className="fullTable" />
-				<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} />
-				<span className="fullTable" />
-				<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} />
-				<span className="fullTable" />
-				<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} />
-				<span className="fullTable" />
-				<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} />
-				<span className="fullTable" />
-		</div>
+				<Carousel indicators={false} interval={3000} controls={false}>
+					<Carousel.Item className="text-center">
+						<img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} />
+					</Carousel.Item>
+					<Carousel.Item className="text-center">
+						<img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} />
+					</Carousel.Item>
+					<Carousel.Item className="text-center">
+						<img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} />
+					</Carousel.Item>
+					<Carousel.Item className="text-center">
+						<img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} />
+					</Carousel.Item>
+				</Carousel>
+				<ul>
+					<li><span className="fullTable" /><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={25} /></li>
+					<li><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={25} /></li>
+					<li><img src={require("assets/img/plumeo/Folio.svg")} alt="Folio" height={25} /></li>
+					<li className="last"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai lu" height={40} /></li>
+				</ul>
+
+			</div>
 		</>
 	);
 };
