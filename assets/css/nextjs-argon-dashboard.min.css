@@ -4144,7 +4144,7 @@ textarea[resize="horizontal"] { resize: horizontal !important }
 .table-flush tbody tr:first-child td, .table-flush tbody tr:first-child th { border-top: 0 }
 .table-flush tbody tr:last-child td, .table-flush tbody tr:last-child th { border-bottom: 0 }
 .card .table { margin-bottom: 0 }
-.card .table td, .card .table th { padding-left: 1.5rem; padding-right: 1.5rem }
+.card .table td, .card .table th { padding-left: 0.5rem; padding-right: 0.5rem }
 
 @media (max-width: 500px) {
 	.card .table td, .card .table th { padding: 1rem 0.5rem; padding: 1rem 0.5rem }

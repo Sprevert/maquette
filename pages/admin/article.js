@@ -212,7 +212,7 @@ function Article() {
 										<tr>
 											<th scope="col">EAN</th>
 											<th scope="col">Maison</th>
-											<th scope="col">Nbre réimpression</th>
+											<th scope="col"><span class="fullTable">Nbre réimpression</span><span className="mobileTable">Nbre</span></th>
 											<th scope="col">Date</th>
 										</tr>
 									</thead>

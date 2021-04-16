@@ -17,7 +17,6 @@ body.compte { background-color: #EDE8E4; }
 
 .navbar-light { background-color: #fff !important; color: #1453b3 !important; }
 .navbar-light .nav-link { color: #1453b3 !important; padding: 0px !important; margin: 0 1em; border-bottom: 3px solid #fff; }
-x‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡
 .topLinks .nav-item { text-align: center; line-height: 1.5; font-weight: 600; cursor: pointer; }
 .myProfile { flex-direction: row-reverse; font-weight: bold; }
 #responsive-navbar-nav { margin-left: 3%; }
@@ -143,8 +142,9 @@ div.compte.container-fluid { margin-top: -100px; }
 }
 
 /* Table */
+.table .thead-light th span{ color: #1453b3; }
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
-.cTable th { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
+.cTable th, .cTable th span{ font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
 .mobileTable { display: none; }
 .titres td img { height: 70px; }
 .titres td { vertical-align: middle !important; color: #000; }
