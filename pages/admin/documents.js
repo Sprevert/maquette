@@ -53,7 +53,7 @@ function Documents() {
 											<td>15 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -62,7 +62,7 @@ function Documents() {
 											<td>1 mai 2020</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -96,7 +96,7 @@ function Documents() {
 											<td>1 Janv. 2021</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -105,7 +105,7 @@ function Documents() {
 											<td>1 Janv. 2021</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -114,7 +114,7 @@ function Documents() {
 											<td>1 Juil. 2020</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -123,7 +123,7 @@ function Documents() {
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -132,7 +132,7 @@ function Documents() {
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>
@@ -217,7 +217,7 @@ function Documents() {
 											<td>1 Janv. 2021</td>
 											<td>
 												<Link href="admin/document">
-													<a className="fa fa-file-pdf-o" aria-hidden="true"></a>
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
 												</Link>
 											</td>
 										</tr>

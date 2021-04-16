@@ -32,13 +32,13 @@ const Login = (props) => {
 								<Form onSubmit={loginSubmit} >
 									<InputGroup className="mb-2">
 										<InputGroup.Prepend>
-											<InputGroup.Text><i className="fa fa-fw fa-user" id="iconUser"></i></InputGroup.Text>
+											<InputGroup.Text><i className="fa fa-fw fa-user fa-lg" id="iconUser"></i></InputGroup.Text>
 										</InputGroup.Prepend>
 										<FormControl id="formBasicIdentifiant" placeholder="Identifiant" />
 									</InputGroup>
 									<InputGroup className="mb-2">
 										<InputGroup.Prepend>
-											<InputGroup.Text><i className="fa fa-fw fa-lock" id="iconUser"></i></InputGroup.Text>
+											<InputGroup.Text><i className="fa fa-fw fa-lock fa-lg" id="iconUser"></i></InputGroup.Text>
 										</InputGroup.Prepend>
 										<FormControl id="formBasicPassword" type="password" placeholder="Mot de passe" />
 									</InputGroup>
