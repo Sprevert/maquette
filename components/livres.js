@@ -25,7 +25,7 @@ function numberWithSpaces(x) {
 export default function DataTable() {
 	return (
 		<React.Fragment>
-			<Table hover responsive className="titres">
+			<Table hover responsive className="livres">
 				<thead className="thead-light">
 					<tr>
 						<th className="fullTable">{ }</th>
@@ -46,7 +46,7 @@ export default function DataTable() {
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
-								<td><div className="titresh1">{row.titre}</div><div className="mobileTable">{row.maison} - {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
+								<td><div className="livresh1">{row.titre}</div><div className="mobileTable">{row.maison} - {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
 								<td className="fullTable">{row.ean}</td>
 								<td className="fullTable">{row.maison}</td>
 								<td className="fullTable">{row.parution}</td>

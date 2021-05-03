@@ -23,11 +23,11 @@ export default function Home(props) {
 						<p>Vous pouvez accéder à tout moment et facilement aux informations concernant votre relation éditeur pour vous faciliter la gestion de votre quotidien administratif.</p>
 					</div>
 					<div className="row home justify-content-md-center">
-						<Link href="titres">
-							<Card id="logotitres" className="logo titres" onMouseEnter={() => logoHover(true, 'titres')} onMouseLeave={() => logoHover(false, 'titres')}>
-								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-titres.svg")} />
+						<Link href="livres">
+							<Card id="logolivres" className="logo livres" onMouseEnter={() => logoHover(true, 'livres')} onMouseLeave={() => logoHover(false, 'livres')}>
+								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-livres.svg")} />
 								<Card.Body>
-									<Card.Title>Mes titres</Card.Title>
+									<Card.Title>Mes livres</Card.Title>
 								</Card.Body>
 							</Card>
 						</Link>

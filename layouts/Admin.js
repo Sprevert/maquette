@@ -24,7 +24,7 @@ function Admin(props) {
 				return routes[i].name;
 			}
 		}
-		if (router.route.indexOf('admin/article') != -1) return 'titres'
+		if (router.route.indexOf('admin/article') != -1) return 'livres'
 		return "Accueil";
 	};
 	const getID = () => {
@@ -33,7 +33,7 @@ function Admin(props) {
 				return routes[i].id;
 			}
 		}
-		if (router.route.indexOf('admin/article') != -1) return 'titres'
+		if (router.route.indexOf('admin/article') != -1) return 'livres'
 		return "home";
 	};
 	useEffect(() => {

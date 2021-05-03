@@ -39,11 +39,7 @@ function Sidebar(props) {
 	return (
 		<Navbar collapseOnSelect expand="lg" className="p-3">
 			<Container fluid="fluid">
-				<Navbar.Brand href="#home">
-					<Link href="/admin/home">
-						<img src={require("assets/img/plumeo/Logo-plumeo.svg")} alt="Pluméo" height={61} width={160} />
-					</Link>
-				</Navbar.Brand>
+				
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto topLinks">

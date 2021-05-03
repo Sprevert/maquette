@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 const Login = (props) => {
 	const loginSubmit = event => {
 		event.preventDefault() // don't redirect the page
-		window.location.href = "/admin/home";
+		window.location.href = "/admin/livres";
 		// where we'll add our form logic
 	}
 	useEffect(() => {

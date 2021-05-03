@@ -51,8 +51,8 @@ function Profile() {
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center m-0 p-0">
 											<div className="">
-												<span className="heading">4</span>
-												<span className="description">Titres</span>
+												<span className="heading">5</span>
+												<span className="description">Livres</span>
 											</div>
 										</div>
 									</div>

@@ -53,10 +53,10 @@ function Article() {
 	};
 	return (
 		<>
-			<Header className="titres" />
+			<Header className="livres" />
 
 			{/* Page content */}
-			<Container className="titres" fluid>
+			<Container className="livres" fluid>
 				{/* Table */}
 				<Row>
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">

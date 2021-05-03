@@ -7,7 +7,7 @@
 @font-face { font-family: 'Brygada1918'; src: url('../fonts/Brygada1918-BoldItalic.ttf') format('truetype'); font-weight: bold; font-style: italic; }
 
 body.home { background-color: #ffffff; }
-body.titres { background-color: #E8EDE6; }
+body.livres { background-color: #E8EDE6; }
 body.documents { background-color: #E9E9D4; }
 body.cessions { background-color: #E1E8ED; }
 body.compte { background-color: #EDE8E4; }
@@ -71,20 +71,20 @@ body.compte { background-color: #EDE8E4; }
 .header h1 img { height: 60px; margin-right: 10px; font-size: 24px; }
 .header h1 { font-size: 50px; letter-spacing: -2px; }
 .header h1 span.underline:before { content: " "; width: 70px; border-bottom: 5px #fff solid; position: absolute; top: 60px; }
-.header.titres h1 span.underline:before, .topLinks .nav-link.titres:before { border-bottom-color: #89d369; }
+.header.livres h1 span.underline:before, .topLinks .nav-link.livres:before { border-bottom-color: #89d369; }
 .header.documents h1 span.underline:before, .topLinks .nav-link.documents:before { border-bottom-color: #d3ba00; }
 .header.cessions h1 span.underline:before, .topLinks .nav-link.cessions:before { border-bottom-color: #7db4ff; }
 .header.compte h1 span.underline:before, .topLinks .nav-link.compte:before { border-bottom-color: #ff8a54; }
-div.titres.container-fluid, div.cessions.container-fluid, div.compte.container-fluid, div.documents.container-fluid { margin-top: -150px; }
+div.livres.container-fluid, div.cessions.container-fluid, div.compte.container-fluid, div.documents.container-fluid { margin-top: -150px; }
 div.compte.container-fluid { margin-top: -100px; }
-.header.titres { border-bottom: 14px solid #89d369; }
+.header.livres { border-bottom: 14px solid #89d369; }
 .header.documents { border-bottom: 14px solid #d3ba00; }
 .header.cessions { border-bottom: 14px solid #7db4ff; }
 .header.compte { border-bottom: 14px solid #ff8a54; }
 
-.titres tr td { cursor: pointer; }
-.titres tr th { font-weight: bold; font-size: 13px !important; }
-.titres tr:hover { background-color: #f6f9fc; }
+.livres tr td { cursor: pointer; }
+.livres tr th { font-weight: bold; font-size: 13px !important; }
+.livres tr:hover { background-color: #f6f9fc; }
 
 .page { margin-top: -280px; position: relative; color: #fff; }
 
@@ -109,8 +109,8 @@ div.compte.container-fluid { margin-top: -100px; }
 .logo.active, .logo:hover { box-shadow: 4px 4px 10px #000; }
 
 /*.logo:hover { box-shadow: 4px 4px 10px #000; transform: translate(-5px, -5px); }*/
-.logo.titres { border-bottom-color: #89d369; }
-.logo.titres .h5 { color: #89d369; }
+.logo.livres { border-bottom-color: #89d369; }
+.logo.livres .h5 { color: #89d369; }
 .logo.documents { border-bottom-color: #d3ba00; }
 .logo.documents .h5 { color: #d3ba00; }
 .logo.cessions { border-bottom-color: #7db4ff; }
@@ -146,16 +146,16 @@ div.compte.container-fluid { margin-top: -100px; }
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
 .cTable th, .cTable th span{ font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
 .mobileTable { display: none; }
-.titres td img { height: 70px; }
-.titres td { vertical-align: middle !important; color: #000; }
-.titresh1 { font-weight: bold; }
+.livres td img { height: 70px; }
+.livres td { vertical-align: middle !important; color: #000; }
+.livresh1 { font-weight: bold; }
 
 @media (max-width: 600px) {
-	.titresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }
+	.livresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }
 	.fullTable { display: none !important; }
 	.mobileTable { display: block; }
-	.titres td img { height: 110px; border-radius: 5px; }
-	.titres td { padding: 5px 10px !important; }
+	.livres td img { height: 110px; border-radius: 5px; }
+	.livres td { padding: 5px 10px !important; }
 }
 
 .card h1, .card h2 { color: #1453b3; }
