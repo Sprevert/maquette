@@ -12,9 +12,10 @@ const columns = [
 ];
 
 const rows = [
-	{ id: 0, ean: '9782070146413', titre: 'Check - point', maison: 'BLANCHE', parution: '10/04/2015', format: 'LIVRE', ventes2020: 1000, ventes: 200000 },
-	{ id: 1, ean: '9782070455379', titre: 'Immortelle randonnée - Compostelle malgré moi', maison: 'FOLIO', parution: '02/10/2014', format: 'LIVRE', ventes2020: 8000, ventes: 180000 },
+	{ id: 4, ean: '9782080238047', titre: 'La Princesse au petit moi', maison: 'FLAMMARION', parution: '07/04/2021', format: 'LIVRE', ventes2020: 5000, ventes: 100000 },
 	{ id: 2, ean: '9782081420250', titre: 'Les trois femmes du consul', maison: 'FLAMMARION', parution: '09/10/2019', format: 'LIVRE', ventes2020: 5000, ventes: 100000 },
+	{ id: 0, ean: '9782070146413', titre: 'Check - point', maison: 'BLANCHE', parution: '10/04/2015', format: 'LIVRE', ventes2020: 1000, ventes: 200000 },
+	{ id: 1, ean: '9782070455379', titre: 'Immortelle randonnée - Compostelle malgré moi', maison: 'FOLIO', parution: '02/10/2014', format: 'LIVRE', ventes2020: 8000, ventes: 180000 },	
 	{ id: 3, ean: '9782290005569', titre: 'Le parfum d\'Adam', maison: 'J\'AI LU', parution: '10/01/2007', format: 'LIVRE', ventes2020: 500, ventes: 10000 },
 ];
 
