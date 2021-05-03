@@ -55,7 +55,7 @@ export default class MyApp extends App {
 						name="viewport"
 						content="width=device-width, initial-scale=1, shrink-to-fit=no"
 					/>
-					<title>Pluméo : Votre portail auteur</title>
+					<title>Votre portail auteur</title>
 					<meta name="description" content="Plumeo, votre portail auteur." />
 					<link rel="icon" type="image/svg+xml" href={require("assets/img/plumeo/favicon.svg")} />
 					<link rel="alternate icon" href={require("assets/img/plumeo/favicon.ico")} />

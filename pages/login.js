@@ -21,8 +21,7 @@ const Login = (props) => {
 			<Header />
 			<Container className="mt--7" fluid>
 				<div className="page">
-					<div className="text-center">
-						<h1><img src={require("assets/img/plumeo/Logo-plumeo-blanc.svg")} alt="Pluméo" height={80} width={160} /></h1>
+					<div className="text-center p-5">						
 						<h2>Connectez-vous à votre portail auteur</h2>
 						<p>Accédez à tout moment et facilement aux informations concernant votre relation éditeur.</p>
 					</div>
@@ -47,8 +46,7 @@ const Login = (props) => {
 							</Card.Body>
 						</Card>
 					</div>
-					<div className="text-center pt-4"><Link href="/"><a className="text-white">Mot de passe oublié</a></Link></div>
-					<div className="text-center pt-3 pb-4"><Link href="/"><a className="text-white">Demandez votre accès</a></Link></div>
+					<div className="text-center p-5"><Link href="/"><a className="text-white">Mot de passe oublié</a></Link></div>
 				</div>
 			</Container>
 		</ >
