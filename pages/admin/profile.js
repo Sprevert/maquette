@@ -22,7 +22,7 @@ function Profile() {
 	return (
 		<>
 			<Header className="compte">
-				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span className="underline">Mon</span> compte<span className="fullTable"> auteur</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span className="underline">Mon</span> profile<span className="fullTable"> auteur</span></h1></div>
 			</Header>
 			{/* Page content */}
 			<Container className="compte" fluid>
@@ -66,16 +66,14 @@ function Profile() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<Col xs="8">
-										<h3 className="mb-0">Mon compte</h3>
+										<h3 className="mb-0">Mon profile</h3>
 									</Col>
 
 								</Row>
 							</CardHeader>
 							<CardBody>
 								<Form>
-									<h6 className="heading-small text-muted mb-4">
-										Information auteur
-                  </h6>
+									<h6 className="heading-small text-muted mb-4">Information auteur</h6>
 									<div className="pl-lg-4">
 										<Row>
 											<Col lg="6">
@@ -221,6 +219,46 @@ function Profile() {
 														id="input-country"
 														placeholder="Pays"
 														type="text"
+													/>
+												</FormGroup>
+											</Col>
+										</Row>
+									</div>
+
+									<hr className="my-4" />
+									<div className="pl-lg-4">
+										<Row>
+											<Col lg="6">
+												<FormGroup>
+													<label
+														className="form-control-label"
+														htmlFor="input-tel-fixe"
+													>
+														Téléphone
+                          </label>
+													<Input
+														className="form-control-alternative"
+														defaultValue=""
+														id="input-tel-fixe"
+														placeholder="Numéro de Téléphone"
+														type="text"
+													/>
+												</FormGroup>
+											</Col>
+											<Col lg="6">
+												<FormGroup>
+													<label
+														className="form-control-label"
+														htmlFor="input-portable"
+													>
+														Portable
+                          </label>
+													<Input
+														className="form-control-alternative"
+														id="input-portable"
+														defaultValue=""
+														placeholder="Numéro de Portable"
+														type="email"
 													/>
 												</FormGroup>
 											</Col>

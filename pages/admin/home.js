@@ -51,7 +51,7 @@ export default function Home(props) {
 							<Card id="logocompte"  className="logo compte" onMouseEnter={() => logoHover(true, 'compte')} onMouseLeave={() => logoHover(false, 'compte')}>
 								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-compte.svg")} />
 								<Card.Body>
-									<Card.Title>Mon compte</Card.Title>
+									<Card.Title>Mon profile</Card.Title>
 								</Card.Body>
 							</Card>
 						</Link>

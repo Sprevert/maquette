@@ -65,7 +65,7 @@ function Sidebar(props) {
 								<Link href="/admin/profile">
 									<DropdownItem>
 										<i className="fa fa-key fa-fw" />
-										<span>Mon compte</span>
+										<span>Mon profile</span>
 									</DropdownItem>
 								</Link>
 								<Link href="/admin/profile">
