@@ -83,7 +83,7 @@ div.compte.container-fluid { margin-top: -100px; }
 .header.compte { border-bottom: 14px solid #ff8a54; }
 
 .livres tr td { cursor: pointer; }
-.livres tr th { font-weight: bold; font-size: 13px !important; }
+.livres tr th { font-weight: bold; font-size: 13px !important;vertical-align:middle!important; }
 .livres tr:hover { background-color: #f6f9fc; }
 
 .page { margin-top: -280px; position: relative; color: #fff; }
@@ -148,7 +148,8 @@ div.compte.container-fluid { margin-top: -100px; }
 .mobileTable { display: none; }
 .livres td img { height: 70px; }
 .livres td { vertical-align: middle !important; color: #000; }
-.livresh1 { font-weight: bold; }
+.livresh1 { font-weight: bold;}
+.notVisible {visibility:hidden;}
 
 @media (max-width: 600px) {
 	.livresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }

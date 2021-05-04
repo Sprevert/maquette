@@ -31,12 +31,10 @@ export default function DataTable() {
 					<tr>
 						<th className="fullTable">{ }</th>
 						<th className="fullTable">TITRE</th>
-						<th className="fullTable">EAN</th>
-						<th className="fullTable">MAISON</th>
-						<th className="fullTable">DATE DE PARUTION</th>
-						<th className="fullTable">FORMAT</th>
-						<th className="text-right fullTable">VENTES 2020</th>
-						<th className="text-right fullTable">VENTES DEPUIS PARUTION</th>
+						<th className="text-center fullTable">MARQUE</th>
+						<th className="text-center fullTable">DATE DE PARUTION</th>
+						<th className="text-center fullTable">SORTIE CAISSE<br/>SEMAINE</th>
+						<th className="text-center fullTable">SORTIE CAISSE<br />DEPUIS PARUTION</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -47,13 +45,17 @@ export default function DataTable() {
 									alt="..."
 									src={require("assets/img/couverture/" + row.ean + ".jpg")}
 								/></td>
-								<td><div className="livresh1">{row.titre}</div><div className="mobileTable">{row.maison} - {row.parution}</div><div className="mobileTable">Ventes 2020 : {numberWithSpaces(row.ventes2020)}</div></td>
-								<td className="fullTable">{row.ean}</td>
-								<td className="fullTable">{row.maison}</td>
-								<td className="fullTable">{row.parution}</td>
-								<td className="fullTable">{row.format}</td>
-								<td className="fullTable" align="right">{numberWithSpaces(row.ventes2020)}</td>
-								<td className="fullTable" align="right">{numberWithSpaces(row.ventes)}</td>
+								<td>
+									<div className="livresh1">{row.titre}</div>
+									<div className="mobileTable">{row.maison} - {row.parution}</div>
+									<div className="mobileTable">Sortie caisse :</div>
+									<div className="mobileTable text-right">{numberWithSpaces(row.ventes2020)} (semaine)</div>
+									<div className="mobileTable text-right">{numberWithSpaces(row.ventes)} (depuis parution)</div></td>
+								
+								<td className="fullTable text-center">{row.maison}</td>
+								<td className="fullTable text-center">{row.parution}</td>
+								<td className="fullTable text-center">{numberWithSpaces(row.ventes2020)}</td>
+								<td className="fullTable text-center">{numberWithSpaces(row.ventes)}</td>
 							</tr>
 						</Link>
 					))}
