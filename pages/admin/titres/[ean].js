@@ -1,4 +1,5 @@
-﻿import React from "react";
+﻿import { getAllLivreEANs, getLivreData } from "components/livres";
+import React from "react";
 import classnames from "classnames";
 
 import { Line, Bar } from "react-chartjs-2";
@@ -28,7 +29,8 @@ import {
 	chartVente2,
 } from "variables/charts.js";
 
-function Article() {
+
+const Articles = ({ articles }) => {
 	const [activeNav, setActiveNav] = React.useState(1);
 	const [activeStockNav, setActiveStockNav] = React.useState(1);
 	const [chartVente1Data, setchartVente1Data] = React.useState("data1");
@@ -68,7 +70,7 @@ function Article() {
 											<img
 												alt="..."
 												className=""
-												src={require("assets/img/couverture/9782070146413.jpg")}
+												src={require("assets/img/couverture/" + articles.ean + ".jpg")}
 											/>
 										</a>
 									</div>
@@ -79,11 +81,11 @@ function Article() {
 									<Row>
 										<Col>
 											<span class="h6 text-muted">EAN</span>
-											<h3>9782070146413</h3>
+											<h3>{articles.ean}</h3>
 										</Col>
 										<Col>
 											<span class="h6 text-muted">Titre</span>
-											<h3>Check-Point</h3>
+											<h3>{articles.titre}</h3>
 										</Col>
 									</Row>
 									<Row>
@@ -316,10 +318,23 @@ function Article() {
 				</Row>
 
 			</Container>
-		</>
-	);
+		</>);
+}
+export default Articles;
+
+export async function getStaticProps({ params }) {
+	//const postData = getLivreData(params.ean)
+	return {
+		props: {
+			articles: getLivreData(params.ean)
+		}
+	}
 }
 
-Article.layout = Admin;
-
-export default Article;
+export async function getStaticPaths() {
+	const paths = getAllLivreEANs()
+	return {
+		paths,
+		fallback: false
+	}
+}
