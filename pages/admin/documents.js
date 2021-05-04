@@ -28,6 +28,7 @@ function Documents() {
 			<Container className="documents" fluid>
 
 				<Row>
+					{/*
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
@@ -70,7 +71,7 @@ function Documents() {
 								</Table>
 							</CardBody>
 						</Card>
-					</Col>
+					</Col>*/}
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow">
@@ -85,6 +86,7 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
+											<th scope="col">Maison</th>
 											<th scope="col">Relevé</th>
 											<th scope="col">Date</th>
 											<th scope="col">{" "}</th>
@@ -92,6 +94,7 @@ function Documents() {
 									</thead>
 									<tbody>
 										<tr>
+											<td>Flammarion</td>
 											<td>Année 2020</td>
 											<td>1 Janv. 2021</td>
 											<td>
@@ -101,6 +104,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
+											<td>Flammarion</td>
 											<td>2e semestre 2020</td>
 											<td>1 Janv. 2021</td>
 											<td>
@@ -110,6 +114,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
+											<td>Flammarion</td>
 											<td>1er semestre 2020</td>
 											<td>1 Juil. 2020</td>
 											<td>
@@ -119,6 +124,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
+											<td>Gallimard</td>
 											<td>Année 2019</td>
 											<td>1 Janv. 2020</td>
 											<td>
@@ -128,7 +134,8 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td>2e semestre 2020</td>
+											<td>Flammarion</td>
+											<td>Année 2019</td>
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
@@ -155,6 +162,8 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
+											<th scope="col">Maison</th>
+											<th scope="col">Titre</th>
 											<th scope="col">Virement</th>
 											<th scope="col">Date</th>
 											<th scope="col">Crédit</th>
@@ -162,29 +171,39 @@ function Documents() {
 									</thead>
 									<tbody>
 										<tr>
+											<td>Flammarion</td>
+											<td>Les trois femmes du consul</td>
 											<td>Février 2021</td>
 											<td>5 Mars 2021</td>
 											<td className="text-success">456 €</td>
 										</tr>
 										<tr>
+											<td>Flammarion</td>
+											<td>Les trois femmes du consul</td>
 											<td>Janvier 2021</td>
 											<td>2 Févr. 2021</td>
 											<td className="text-success">350 €</td>
 										</tr>
 										<tr>
+											<td>Gallimard</td>
+											<td>Check-Point</td>
+											<td>Décembre 2020</td>
+											<td>7 Janv. 2021</td>
+											<td className="text-success">850 €</td>
+										</tr>
+										<tr>
+											<td>Flammarion</td>
+											<td>Les trois femmes du consul</td>
 											<td>Décembre 2020</td>
 											<td>4 Janv. 2021</td>
 											<td className="text-success">650 €</td>
 										</tr>
 										<tr>
+											<td>Flammarion</td>
+											<td>Les trois femmes du consul</td>
 											<td>Novembre 2020</td>
 											<td>5 Déc. 2021</td>
 											<td className="text-success">250 €</td>
-										</tr>
-										<tr>
-											<td>Octobre 2020</td>
-											<td>5 Nov. 2021</td>
-											<td className="text-success">415 €</td>
 										</tr>
 									</tbody>
 								</Table>
@@ -206,6 +225,7 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
+											<th scope="col">Maison</th>
 											<th scope="col">Document</th>
 											<th scope="col">Date</th>
 											<th scope="col">{" "}</th>
@@ -213,6 +233,7 @@ function Documents() {
 									</thead>
 									<tbody>
 										<tr>
+											<td>Flammarion</td>
 											<td>DADS 2020</td>
 											<td>1 Janv. 2021</td>
 											<td>
