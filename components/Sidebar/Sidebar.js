@@ -62,19 +62,19 @@ function Sidebar(props) {
 								</Media>
 							</DropdownToggle>
 							<DropdownMenu className="dropdown-menu-arrow" right>
-								<Link href="/admin/profile">
+								<Link href="/admin/profil">
 									<DropdownItem>
 										<i className="fa fa-key fa-fw" />
-										<span>Mon profile</span>
+										<span>Mon profil</span>
 									</DropdownItem>
 								</Link>
-								<Link href="/admin/profile">
+								<Link href="/admin/profil">
 									<DropdownItem>
 										<i className="fa fa-lock fa-fw" />
 										<span>Mot de passe</span>
 									</DropdownItem>
 								</Link>
-								<Link href="/admin/profile">
+								<Link href="/admin/profil">
 									<DropdownItem>
 										<i className="fa fa-cogs fa-fw" />
 										<span>Préférences</span>

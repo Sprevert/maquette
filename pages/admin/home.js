@@ -47,11 +47,11 @@ export default function Home(props) {
 								</Card.Body>
 							</Card>
 						</Link>
-						<Link href="profile">
+						<Link href="profil">
 							<Card id="logocompte"  className="logo compte" onMouseEnter={() => logoHover(true, 'compte')} onMouseLeave={() => logoHover(false, 'compte')}>
 								<Card.Img variant="top" src={require("assets/img/plumeo/Picto-compte.svg")} />
 								<Card.Body>
-									<Card.Title>Mon profile</Card.Title>
+									<Card.Title>Mon profil</Card.Title>
 								</Card.Body>
 							</Card>
 						</Link>

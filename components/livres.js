@@ -42,8 +42,8 @@ export default function DataTable() {
 						<th className="fullTable">TITRE</th>
 						<th className="text-center fullTable">MARQUE</th>
 						<th className="text-center fullTable">DATE DE PARUTION</th>
-						<th className="text-center fullTable">SORTIE CAISSE<br />SEMAINE</th>
-						<th className="text-center fullTable">SORTIE CAISSE<br />DEPUIS PARUTION</th>
+						<th className="text-center fullTable">SORTIES CAISSES<br />SEMAINE</th>
+						<th className="text-center fullTable">SORTIES CAISSES<br />DEPUIS PARUTION</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -58,7 +58,7 @@ export default function DataTable() {
 									<div className={row.soustitre == '' ? "livresh1" : "livresh1 mb-0"}>{row.titre}</div>
 									{row.soustitre != '' && <div className="livresh2">{row.soustitre}</div>}
 									<div className="mobileTable">{row.maison == 'GALLIMARD' ? row.collection : row.maison} - {row.parution}</div>
-									<div className="mobileTable">Sortie caisse :</div>
+									<div className="mobileTable">Sorties caisses :</div>
 									<div className="mobileTable ml-5">{numberWithSpaces(row.ventes2020)} (semaine)</div>
 									<div className="mobileTable ml-5">{numberWithSpaces(row.ventes)} (depuis parution)</div></td>
 

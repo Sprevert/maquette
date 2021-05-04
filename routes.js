@@ -14,9 +14,9 @@ var routes = [
 		layout: "/admin",
 	},
 	{
-		path: "/profile",
+		path: "/profil",
 		id: "compte",
-		name: "Mon profile",
+		name: "Mon profil",
 		icon: "ni ni-single-02 text-yellow",
 		layout: "/admin",
 	},

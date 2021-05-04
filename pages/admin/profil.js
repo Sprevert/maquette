@@ -18,11 +18,11 @@ import Admin from "layouts/Admin.js";
 // core components
 import Header from "components/Headers/Header.js";
 
-function Profile() {
+function Profil() {
 	return (
 		<>
 			<Header className="compte">
-				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span className="underline">Mon</span> profile<span className="fullTable"> auteur</span></h1></div>
+				<div><h1><img src={require("assets/img/plumeo/Picto-compte-blanc.svg")} /><span className="underline">Mon</span> profil<span className="fullTable"> auteur</span></h1></div>
 			</Header>
 			{/* Page content */}
 			<Container className="compte" fluid>
@@ -66,7 +66,7 @@ function Profile() {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<Col xs="8">
-										<h3 className="mb-0">Mon profile</h3>
+										<h3 className="mb-0">Mon profil</h3>
 									</Col>
 
 								</Row>
@@ -234,13 +234,13 @@ function Profile() {
 														className="form-control-label"
 														htmlFor="input-tel-fixe"
 													>
-														Téléphone
+														Téléphone fixe
                           </label>
 													<Input
 														className="form-control-alternative"
 														defaultValue=""
 														id="input-tel-fixe"
-														placeholder="Numéro de Téléphone"
+														placeholder="Numéro de téléphone fixe"
 														type="text"
 													/>
 												</FormGroup>
@@ -251,13 +251,13 @@ function Profile() {
 														className="form-control-label"
 														htmlFor="input-portable"
 													>
-														Portable
+														Téléphone mobile
                           </label>
 													<Input
 														className="form-control-alternative"
 														id="input-portable"
 														defaultValue=""
-														placeholder="Numéro de Portable"
+														placeholder="Numéro de téléphone mobile"
 														type="email"
 													/>
 												</FormGroup>
@@ -274,6 +274,6 @@ function Profile() {
 	);
 }
 
-Profile.layout = Admin;
+Profil.layout = Admin;
 
-export default Profile;
+export default Profil;
