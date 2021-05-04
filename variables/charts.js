@@ -463,7 +463,7 @@ let chartVente1 = {
 };
 
 
-let chartVente2 = {
+let chartVenteNew = {
 	options: {
 		scales: {
 			yAxes: [
@@ -501,16 +501,65 @@ let chartVente2 = {
 	},
 	data: (canvas) => {
 		return {
-			labels: ["Août", "Sept.", "Oct.", "Nov.", "Déc.", "Janv.", "Févr.", "Mars"],
+			labels: ["Sept.", "Oct.", "Nov.", "Déc.", "Janv.", "Févr.", "Avril"],
 			datasets: [
 				{
 					label: "Ventes",
-					data: [438, 371, 219, 240, 536, 248, 191, 115],
+					data: [ 0, 0, 0, 0, 0, 0, 86754],
 				},
 			],
 		};
 	},
-	
+
+};
+let chartVenteOld = {
+	options: {
+		scales: {
+			yAxes: [
+				{
+					gridLines: {
+						color: colors.gray[900],
+						zeroLineColor: colors.gray[900],
+					},
+					ticks: {
+						callback: function (value) {
+							if (!(value % 10)) {
+								return "" + value;
+							}
+						},
+					},
+				},
+			],
+		},
+		tooltips: {
+			callbacks: {
+				label: function (item, data) {
+					var label = data.datasets[item.datasetIndex].label || "";
+					var yLabel = item.yLabel;
+					var content = "";
+
+					if (data.datasets.length > 1) {
+						content += label;
+					}
+
+					content += yLabel;
+					return content;
+				},
+			},
+		},
+	},
+	data: (canvas) => {
+		return {
+			labels: ["Sept.", "Oct.", "Nov.", "Déc.", "Janv.", "Févr.", "Avril"],
+			datasets: [
+				{
+					label: "Ventes",
+					data: [ 371, 219, 240, 536, 248, 191, 115],
+				},
+			],
+		};
+	},
+
 };
 
 module.exports = {
@@ -519,5 +568,6 @@ module.exports = {
 	Stock1, // used inside src/views/Index.js
 	chartExample2, // used inside src/views/Index.js
 	chartVente1, // used inside src/views/Article.js
-	chartVente2, // used inside src/views/Article.js
+	chartVenteOld, // used inside src/views/Article.js
+	chartVenteNew, // used inside src/views/Article.js
 };

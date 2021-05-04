@@ -25,7 +25,7 @@ import {
 	parseOptions,
 	Stock1,
 	chartVente1,
-	chartVente2,
+	chartVenteOld,
 } from "variables/charts.js";
 
 function Article() {
@@ -189,8 +189,8 @@ function Article() {
 								<div className="text-center">
 									<div className="chart">
 										<Bar
-											data={chartVente2.data}
-											options={chartVente2.options}
+											data={chartVenteOld.data}
+											options={chartVenteOld.options}
 										/>
 									</div>
 

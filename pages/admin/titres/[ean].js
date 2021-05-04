@@ -26,8 +26,18 @@ import {
 	parseOptions,
 	Stock1,
 	chartVente1,
-	chartVente2,
+	chartVenteOld,
+	chartVenteNew,
 } from "variables/charts.js";
+
+
+function numberPrice(x) {
+	return parseFloat(x).toFixed(2).replace('.',',');
+}
+
+function numberWithSpaces(x) {
+	return parseInt(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 
 const Articles = ({ articles }) => {
@@ -91,22 +101,22 @@ const Articles = ({ articles }) => {
 									<Row>
 										<Col>
 											<span class="h6 text-muted">Maison d'édition</span>
-											<h4>GALLIMARD</h4>
+											<h4>{articles.maison}</h4>
 										</Col>
 
 										<Col>
 											<span class="h6 text-muted">Collection</span>
-											<h4>BLANCHE</h4>
+											<h4>{articles.collection}</h4>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
 											<span class="h6 text-muted">Date 1ere MEV</span>
-											<h4>10 Avril 2015</h4>
+											<h4>{articles.parution}</h4>
 										</Col>
 										<Col>
 											<span class="h6 text-muted">Prix public TTC</span>
-											<h4>21,00 €</h4>
+											<h4>{numberPrice(articles.prixTTC)} €</h4>
 										</Col>
 									</Row>
 								</div>
@@ -160,11 +170,11 @@ const Articles = ({ articles }) => {
 										<Row>
 											<Col>
 												<span class="h6">au dernier arrêté (décembre 2020)</span>
-												<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
+											<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
 											</Col>
 											<Col>
 												<span class="h6">depuis parution</span>
-												<h3><span id="ventes_1">200 000</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
+											<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
 											</Col>
 										</Row>
 										<div className="chart">
@@ -196,8 +206,8 @@ const Articles = ({ articles }) => {
 								<div className="text-center">
 									<div className="chart">
 										<Bar
-											data={chartVente2.data}
-											options={chartVente2.options}
+											data={articles.isNew ? chartVenteNew.data : chartVenteOld.data}
+											options={articles.isNew ? chartVenteNew.options : chartVenteOld.options}
 										/>
 									</div>
 								</div>
