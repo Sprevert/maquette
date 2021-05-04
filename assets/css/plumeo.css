@@ -148,11 +148,13 @@ div.compte.container-fluid { margin-top: -100px; }
 .mobileTable { display: none; }
 .livres td img { height: 70px; }
 .livres td { vertical-align: middle !important; color: #000; }
-.livresh1 { font-weight: bold;}
+.livresh1, .livresh2 { font-weight: bold; }
+.livresh2 { font-size: 80%; white-space: normal;}
 .notVisible {visibility:hidden;}
 
 @media (max-width: 600px) {
 	.livresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }
+	.livresh2 { font-size: 120%; white-space: normal; margin-bottom: 5px; }
 	.fullTable { display: none !important; }
 	.mobileTable { display: block; }
 	.livres td img { height: 110px; border-radius: 5px; }
