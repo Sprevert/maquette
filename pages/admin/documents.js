@@ -120,7 +120,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td className="text-center"><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Flammarion" height={15} /></td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={15} /></td>
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
@@ -129,7 +129,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai Lu" height={30} /></td>
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
