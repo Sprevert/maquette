@@ -320,6 +320,8 @@ const Articles = ({ articles }) => {
 			</Container>
 		</>);
 }
+
+Articles.layout = Admin;
 export default Articles;
 
 export async function getStaticProps({ params }) {
