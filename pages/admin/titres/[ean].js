@@ -184,11 +184,11 @@ const Articles = ({ articles }) => {
 										<Row>
 											<Col>
 												<span class="h6">au dernier arrêté (décembre 2020)</span>
-											<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span><span id="ventes2020_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes / 3)+5606)}</span></h3>
+												<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span><span id="ventes2020_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes / 3) + 5606)}</span></h3>
 											</Col>
 											<Col>
 												<span class="h6">depuis parution</span>
-											<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span><span id="ventes_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes)+5656)}</span></h3>
+												<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span><span id="ventes_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes) + 5656)}</span></h3>
 											</Col>
 										</Row>
 										<div className="chart">
@@ -242,17 +242,23 @@ const Articles = ({ articles }) => {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6">Tirage cumulé</span>
+											<span className="h6">Tirage cumulé</span>
 											<h3>100 000</h3>
 										</Col>
 										<Col>
-											<span class="h6">Nb de réimpressions</span>
-											<h3>3</h3>
+											<span className="h6">Nb de réimpressions</span>
+											<h3>{articles.isNew ? 0 : 3}</h3>
 										</Col>
-										<Col>
-											<span class="h6">Dernière réimpression</span>
-											<h3>5 000 ex. le 15/02/2020 </h3>
-										</Col>
+										{articles.isNew &&
+											<Col>
+											<span className="h6 new pt-4">Nouveauté</span>
+											</Col>}
+										{!articles.isNew &&
+											<Col>
+											<span className="h6">Dernière réimpression</span>
+												<h3>5 000 ex. le 15/02/2020 </h3>
+											</Col>
+										}
 									</Row>
 								</div>
 							</CardBody>
