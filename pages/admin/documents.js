@@ -86,7 +86,7 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
-											<th className="text-center">Maison dédition</th>
+											<th className="text-center">Maison d'édition</th>
 											<th scope="col">Date</th>
 											<th scope="col">{" "}</th>
 										</tr>

@@ -170,7 +170,7 @@ const Articles = ({ articles }) => {
 														href="#m"
 														onClick={(e) => toggleNavs(e, 3)}
 													>
-														<span className="d-none d-md-block">Tous</span>
+														<span className="d-none d-md-block">Total</span>
 														<span className="d-md-none" title="Tous">T</span>
 													</NavLink>
 												</NavItem>
