@@ -139,7 +139,7 @@ const Articles = ({ articles }) => {
 											<Nav className="justify-content-end toggle" pills>
 												<NavItem>
 													<NavLink
-														className={classnames("py-2 px-3", {
+														className={classnames("p-2", {
 															active: activeNav === 1,
 														})}
 														href="#m"
@@ -151,7 +151,7 @@ const Articles = ({ articles }) => {
 												</NavItem>
 												<NavItem>
 													<NavLink
-														className={classnames("py-2 px-3", {
+														className={classnames("p-2", {
 															active: activeNav === 2,
 														})}
 														data-toggle="tab"
@@ -164,7 +164,7 @@ const Articles = ({ articles }) => {
 												</NavItem>
 												<NavItem>
 													<NavLink
-														className={classnames("py-2 px-3", {
+														className={classnames("p-2", {
 															active: activeNav === 3,
 														})}
 														href="#m"
