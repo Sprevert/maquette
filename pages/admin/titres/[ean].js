@@ -32,7 +32,7 @@ import {
 
 
 function numberPrice(x) {
-	return parseFloat(x).toFixed(2).replace('.',',');
+	return parseFloat(x).toFixed(2).replace('.', ',');
 }
 
 function numberWithSpaces(x) {
@@ -57,6 +57,8 @@ const Articles = ({ articles }) => {
 		document.getElementById('ventes2020_1').style.display = index == 1 ? 'block' : 'none';
 		document.getElementById('ventes_2').style.display = index == 2 ? 'block' : 'none';
 		document.getElementById('ventes2020_2').style.display = index == 2 ? 'block' : 'none';
+		document.getElementById('ventes_3').style.display = index == 3 ? 'block' : 'none';
+		document.getElementById('ventes2020_3').style.display = index == 3 ? 'block' : 'none';
 	};
 	const toggleStockNavs = (e, index) => {
 		e.preventDefault();
@@ -160,6 +162,18 @@ const Articles = ({ articles }) => {
 														<span className="d-md-none" title="Numériques">N</span>
 													</NavLink>
 												</NavItem>
+												<NavItem>
+													<NavLink
+														className={classnames("py-2 px-3", {
+															active: activeNav === 3,
+														})}
+														href="#m"
+														onClick={(e) => toggleNavs(e, 3)}
+													>
+														<span className="d-none d-md-block">Tous</span>
+														<span className="d-md-none" title="Tous">T</span>
+													</NavLink>
+												</NavItem>
 											</Nav>
 										</div>
 									</Row>
@@ -170,11 +184,11 @@ const Articles = ({ articles }) => {
 										<Row>
 											<Col>
 												<span class="h6">au dernier arrêté (décembre 2020)</span>
-											<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
+											<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span><span id="ventes2020_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes / 3)+5606)}</span></h3>
 											</Col>
 											<Col>
 												<span class="h6">depuis parution</span>
-											<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
+											<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span><span id="ventes_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes)+5656)}</span></h3>
 											</Col>
 										</Row>
 										<div className="chart">

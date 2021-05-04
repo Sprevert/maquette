@@ -460,6 +460,17 @@ let chartVente1 = {
 			],
 		};
 	},
+	data3: (canvas) => {
+		return {
+			labels: ["Août", "Sept.", "Oct.", "Nov.", "Déc.", "Janv.", "Févr.", "Mars"],
+			datasets: [
+				{
+					label: "Numérique",
+					data: [470, 414, 284, 275, 549, 277, 224, 125],
+				},
+			],
+		};
+	},
 };
 
 
