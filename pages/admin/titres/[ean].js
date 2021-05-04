@@ -114,70 +114,75 @@ const Articles = ({ articles }) => {
 						</Card>
 					</Col>
 
-					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
-						<Card className="bg-secondary  shadow">
-							<CardHeader className="bg-white border-0">
-								<Row className="align-items-center">
-									<div className="col">
-										<h2 className="text-uppercase ls-1 mb-1">Mes Ventes</h2>
-									</div>
-									<div className="col">
-										<Nav className="justify-content-end toggle" pills>
-											<NavItem>
-												<NavLink
-													className={classnames("py-2 px-3", {
-														active: activeNav === 1,
-													})}
-													href="#m"
-													onClick={(e) => toggleNavs(e, 1)}
-												>
-													<span className="d-none d-md-block">Papiers</span>
-													<span className="d-md-none" title="Papiers">P</span>
-												</NavLink>
-											</NavItem>
-											<NavItem>
-												<NavLink
-													className={classnames("py-2 px-3", {
-														active: activeNav === 2,
-													})}
-													data-toggle="tab"
-													href="#w"
-													onClick={(e) => toggleNavs(e, 2)}
-												>
-													<span className="d-none d-md-block">Numériques</span>
-													<span className="d-md-none" title="Numériques">N</span>
-												</NavLink>
-											</NavItem>
-										</Nav>
-									</div>
-								</Row>
-							</CardHeader>
-							<CardBody>
-								<h3 className="heading-small text-muted mb-0">Ventes cumulées</h3>
-								<div className="text-center">
-									<Row>
-										<Col>
-											<span class="h6">au dernier arrêté (décembre 2020)</span>
-											<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
-										</Col>
-										<Col>
-											<span class="h6">depuis parution</span>
-											<h3><span id="ventes_1">200 000</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
-										</Col>
+
+					{!articles.isNew &&
+						<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+							<Card className="bg-secondary  shadow">
+								<CardHeader className="bg-white border-0">
+									<Row className="align-items-center">
+										<div className="col">
+											<h2 className="text-uppercase ls-1 mb-1">Mes Ventes</h2>
+										</div>
+										<div className="col">
+											<Nav className="justify-content-end toggle" pills>
+												<NavItem>
+													<NavLink
+														className={classnames("py-2 px-3", {
+															active: activeNav === 1,
+														})}
+														href="#m"
+														onClick={(e) => toggleNavs(e, 1)}
+													>
+														<span className="d-none d-md-block">Papiers</span>
+														<span className="d-md-none" title="Papiers">P</span>
+													</NavLink>
+												</NavItem>
+												<NavItem>
+													<NavLink
+														className={classnames("py-2 px-3", {
+															active: activeNav === 2,
+														})}
+														data-toggle="tab"
+														href="#w"
+														onClick={(e) => toggleNavs(e, 2)}
+													>
+														<span className="d-none d-md-block">Numériques</span>
+														<span className="d-md-none" title="Numériques">N</span>
+													</NavLink>
+												</NavItem>
+											</Nav>
+										</div>
 									</Row>
-									<div className="chart">
-										<Bar
-											data={chartVente1[chartVente1Data]}
-											options={chartVente1.options}
-											getDatasetAtEvent={(e) => console.log(e)}
-										/>
+								</CardHeader>
+								<CardBody>
+									<h3 className="heading-small text-muted mb-0">Ventes cumulées</h3>
+									<div className="text-center">
+										<Row>
+											<Col>
+												<span class="h6">au dernier arrêté (décembre 2020)</span>
+												<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
+											</Col>
+											<Col>
+												<span class="h6">depuis parution</span>
+												<h3><span id="ventes_1">200 000</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
+											</Col>
+										</Row>
+										<div className="chart">
+											<Bar
+												data={chartVente1[chartVente1Data]}
+												options={chartVente1.options}
+												getDatasetAtEvent={(e) => console.log(e)}
+											/>
+										</div>
+
 									</div>
+								</CardBody>
+							</Card>
+						</Col>
+					}
 
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
 
+					{/* Ventes GFK */}
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow mb-5">
 							<CardHeader className="bg-white border-0">
@@ -195,48 +200,42 @@ const Articles = ({ articles }) => {
 											options={chartVente2.options}
 										/>
 									</div>
-
 								</div>
 							</CardBody>
 						</Card>
+					</Col>
+					{/* Tirage */}
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h2 className="text-uppercase ls-1 mb-1">Liste des réimpressions</h2>
+										<h2 className="text-uppercase ls-1 mb-1">Tirage</h2>
 									</div>
 								</Row>
 							</CardHeader>
 							<CardBody className="p-0">
-
-								<Table className="align-items-center table-flush" responsive>
-									<thead className="thead-light">
-										<tr>
-											<th scope="col">EAN</th>
-											<th scope="col">Maison</th>
-											<th scope="col"><span class="fullTable">Nbre réimpression</span><span className="mobileTable">Nbre</span></th>
-											<th scope="col">Date</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>9782070146413</td>
-											<td>BLANCHE</td>
-											<td align="right">1 750</td>
-											<td>10 oct. 2017</td>
-										</tr>
-										<tr>
-											<td>9782070146413</td>
-											<td>BLANCHE</td>
-											<td align="right">4 250</td>
-											<td>26 mai 2016</td>
-										</tr>
-									</tbody>
-								</Table>
+								<div className="text-center">
+									<Row>
+										<Col>
+											<span class="h6">Tirage cumulé</span>
+											<h3>100 000</h3>
+										</Col>
+										<Col>
+											<span class="h6">Nb de réimpressions</span>
+											<h3>3</h3>
+										</Col>
+										<Col>
+											<span class="h6">Dernière réimpression</span>
+											<h3>5 000 le 15/02/2020 </h3>
+										</Col>
+									</Row>
+								</div>
 							</CardBody>
 						</Card>
 					</Col>
 
+					{/*
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 
 						<Card className="bg-secondary shadow mb-5">
@@ -262,7 +261,7 @@ const Articles = ({ articles }) => {
 								</div>
 							</CardBody>
 						</Card>
-
+						
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
@@ -313,7 +312,7 @@ const Articles = ({ articles }) => {
 								</div>
 							</CardBody>
 						</Card>
-					</Col>
+					</Col>*/}
 
 				</Row>
 
