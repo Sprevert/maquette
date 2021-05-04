@@ -73,7 +73,7 @@ function Documents() {
 						</Card>
 					</Col>*/}
 
-					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="4">
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
@@ -86,14 +86,14 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
-											<th scope="col">Maison dédition</th>
+											<th className="text-center">Maison dédition</th>
 											<th scope="col">Date</th>
 											<th scope="col">{" "}</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Flammarion</td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
 											<td>1 Janv. 2021</td>
 											<td>
 												<Link href="admin/document">
@@ -102,7 +102,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td>Flammarion</td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
 											<td>1 Janv. 2021</td>
 											<td>
 												<Link href="admin/document">
@@ -111,7 +111,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td>Flammarion</td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
 											<td>1 Juil. 2020</td>
 											<td>
 												<Link href="admin/document">
@@ -120,7 +120,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td>Gallimard</td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Flammarion" height={15} /></td>
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
@@ -129,7 +129,7 @@ function Documents() {
 											</td>
 										</tr>
 										<tr>
-											<td>Flammarion</td>
+											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
 											<td>1 Janv. 2020</td>
 											<td>
 												<Link href="admin/document">
@@ -143,7 +143,7 @@ function Documents() {
 						</Card>
 					</Col>
 
-					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="4">
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
@@ -156,33 +156,39 @@ function Documents() {
 								<Table className="align-items-center table-flush" responsive>
 									<thead className="thead-light">
 										<tr>
-											<th scope="col">Titre</th>
-											<th scope="col">Date</th>
-											<th scope="col">Crédit</th>
+											<th width="40">{" "}</th>
+											<th>Titre</th>
+											<th>Date</th>
+											<th>Crédit</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
+											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>5 Mars 2021</td>
 											<td className="text-success">456 €</td>
 										</tr>
 										<tr>
+											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>2 Févr. 2021</td>
 											<td className="text-success">350 €</td>
 										</tr>
 										<tr>
+											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782070146413.jpg")} height="40" /></td>
 											<td>Check-Point</td>
 											<td>7 Janv. 2021</td>
 											<td className="text-success">850 €</td>
 										</tr>
 										<tr>
+											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>4 Janv. 2021</td>
 											<td className="text-success">650 €</td>
 										</tr>
 										<tr>
+											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>5 Déc. 2021</td>
 											<td className="text-success">250 €</td>
@@ -193,7 +199,7 @@ function Documents() {
 						</Card>
 					</Col>
 
-					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="4">
 
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">

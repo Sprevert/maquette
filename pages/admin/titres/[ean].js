@@ -237,7 +237,7 @@ const Articles = ({ articles }) => {
 										</Col>
 										<Col>
 											<span class="h6">Dernière réimpression</span>
-											<h3>5 000 ex. 15/02/2020 </h3>
+											<h3>5 000 ex. le 15/02/2020 </h3>
 										</Col>
 									</Row>
 								</div>
