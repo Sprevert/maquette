@@ -81,7 +81,7 @@ const Articles = ({ articles }) => {
 										<a href="#pablo" onClick={(e) => e.preventDefault()}>
 											<img
 												alt="..."
-												className=""
+												className="shadow"
 												src={require("assets/img/couverture/" + articles.ean + ".jpg")}
 											/>
 										</a>
