@@ -208,7 +208,7 @@ const Articles = ({ articles }) => {
 
 					{/* Ventes GFK */}
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
-						<Card className="bg-secondary  shadow mb-5">
+						<Card className="bg-secondary shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
@@ -251,11 +251,11 @@ const Articles = ({ articles }) => {
 										</Col>
 										{articles.isNew &&
 											<Col>
-											<span className="h6 new pt-4">Nouveauté</span>
+												<span className="h6 new pt-4">Nouveauté</span>
 											</Col>}
 										{!articles.isNew &&
 											<Col>
-											<span className="h6">Dernière réimpression</span>
+												<span className="h6">Dernière réimpression</span>
 												<h3>5 000 ex. le 15/02/2020 </h3>
 											</Col>
 										}
@@ -347,6 +347,11 @@ const Articles = ({ articles }) => {
 				</Row>
 
 			</Container>
+			{false && articles.logo != '' &&
+				<div className="editions p-1">
+					<img src={require("assets/img/plumeo/" + articles.logo)} alt={articles.maison} height={25} />
+				</div>
+			}
 		</>);
 }
 
