@@ -162,7 +162,7 @@ function Profil() {
                           </label>
 													<Input
 														className="form-control-alternative"
-														defaultValue="Adresse"
+														defaultValue=""
 														id="input-address"
 														placeholder="Adresse"
 														type="text"
