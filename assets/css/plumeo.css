@@ -166,7 +166,7 @@ div.compte.container-fluid { margin-top: -100px; }
 .toggle a.active { background-color: #1453b3 !important; }
 .toggle .active span { color: #fff; }
 .toggle span { color: #1453b3; }
-.new{font-style:italic;font-weight:bold;vertical-align:middle;}
+.new{font-style:italic;font-weight:bold;vertical-align:middle;display:inline-block;}
 
 .card-article .card-body { margin-top: 200px; }
 
