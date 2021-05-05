@@ -145,8 +145,8 @@ const Articles = ({ articles }) => {
 														href="#m"
 														onClick={(e) => toggleNavs(e, 1)}
 													>
-														<span className="d-none d-md-block">Papiers</span>
-														<span className="d-md-none" title="Papiers">P</span>
+														<span className="d-none d-md-block">Papier</span>
+														<span className="d-md-none" title="Papier">P</span>
 													</NavLink>
 												</NavItem>
 												<NavItem>
@@ -158,8 +158,8 @@ const Articles = ({ articles }) => {
 														href="#w"
 														onClick={(e) => toggleNavs(e, 2)}
 													>
-														<span className="d-none d-md-block">Numériques</span>
-														<span className="d-md-none" title="Numériques">N</span>
+														<span className="d-none d-md-block">Numérique</span>
+														<span className="d-md-none" title="Numérique">N</span>
 													</NavLink>
 												</NavItem>
 												<NavItem>
@@ -171,7 +171,7 @@ const Articles = ({ articles }) => {
 														onClick={(e) => toggleNavs(e, 3)}
 													>
 														<span className="d-none d-md-block">Total</span>
-														<span className="d-md-none" title="Tous">T</span>
+														<span className="d-md-none" title="Total">T</span>
 													</NavLink>
 												</NavItem>
 											</Nav>
