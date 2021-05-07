@@ -129,13 +129,13 @@ div.compte.container-fluid { margin-top: -100px; }
 .editions ul { display: none; }
 .editions li img { margin: 10px 15px; }
 
-.editions li:before, .editions .carousel-item span { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
-.editions li.last:after { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
+.editions li:before, .editions .carousel-item span { margin: 10px 0; height: 40px; border-right: 1px solid #1453b3; display: inline-block; vertical-align: middle; content: " " }
+.editions li.last:after { margin: 10px 0; height: 40px; border-right: 1px solid #1453b3; display: inline-block; vertical-align: middle; content: " " }
 
 
 .editions .carousel-item { height: 30px; vertical-align: middle; }
 .editions .carousel-item img { height: 20px; vertical-align: middle; }
-.editions .carousel-item span { margin: 0 10px; height: 30px; border-right: 2px solid #DCE4F1; display: inline-block; vertical-align: middle; }
+.editions .carousel-item span { margin: 0 10px; height: 30px; border-right: 2px solid #1453b3; display: inline-block; vertical-align: middle; }
 
 @media (min-width: 600px) {
 	.editions ul { display: block; }
