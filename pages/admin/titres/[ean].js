@@ -121,6 +121,11 @@ const Articles = ({ articles }) => {
 											<h4>{numberPrice(articles.prixTTC)} €</h4>
 										</Col>
 									</Row>
+									<Row><Col>{articles.logo != '' &&
+										<div className="editions p-1">
+											<img src={require("assets/img/plumeo/" + articles.logo)} alt={articles.maison} height={25} />
+										</div>
+									}</Col></Row>
 								</div>
 							</CardBody>
 						</Card>
