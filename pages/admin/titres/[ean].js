@@ -122,7 +122,7 @@ const Articles = ({ articles }) => {
 										</Col>
 									</Row>
 									<Row><Col>{articles.logo != '' &&
-										<div className="editions p-1">
+										<div className="editions p-1 pt-4">
 											<img src={require("assets/img/plumeo/" + articles.logo)} alt={articles.maison} height={25} />
 										</div>
 									}</Col></Row>
