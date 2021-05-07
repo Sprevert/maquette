@@ -7,7 +7,7 @@ const rows = [
 	{ id: 2, ean: '9782081420250', titre: 'Les trois femmes du consul', soustitre: '', maison: 'Flammarion', collection: 'Littérature française', parution: '09/10/2019', format: 'LIVRE', ventes2020: 11, ventes: 109315, isNew: false, prixTTC: 19.50, logo: 'Flammarion_logo.png' },
 	{ id: 0, ean: '9782070146413', titre: 'Check-point', soustitre: '', maison: 'Éditions Gallimard', collection: 'Blanche', parution: '10/04/2015', format: 'LIVRE', ventes2020: 1, ventes: 197287, isNew: false, prixTTC: 21, logo: 'Gallimard_logo.png' },
 	{ id: 1, ean: '9782070455379', titre: 'Immortelle randonnée', soustitre: 'Compostelle malgré moi', maison: 'Éditions Gallimard', collection: 'Folio', parution: '02/10/2014', format: 'LIVRE', ventes2020: 128, ventes: 184120, isNew: false, prixTTC: 7.50, logo: 'Folio.svg'  },
-	{ id: 3, ean: '9782290005569', titre: 'Le parfum d\'Adam', soustitre: '', maison: 'J\'ai Lu', collection: 'Litterature française', parution: '10/01/2007', format: 'LIVRE', ventes2020: 2, ventes: 110067, isNew: false, prixTTC: 8, logo:'Lu_logo.png'},
+	{ id: 3, ean: '9782290005569', titre: 'Le parfum d\'Adam', soustitre: '', maison: 'J\'ai Lu', collection: 'Littérature française', parution: '10/01/2007', format: 'LIVRE', ventes2020: 2, ventes: 110067, isNew: false, prixTTC: 8, logo:'Lu_logo.png'},
 ];
 
 function numberWithSpaces(x) {
