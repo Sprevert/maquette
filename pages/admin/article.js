@@ -78,32 +78,32 @@ function Article() {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6 text-muted">EAN</span>
+											<span className="h6 text-muted">EAN</span>
 											<h3>9782070146413</h3>
 										</Col>
 										<Col>
-											<span class="h6 text-muted">Titre</span>
+											<span className="h6 text-muted">Titre</span>
 											<h3>Check-Point</h3>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<span class="h6 text-muted">Maison d'édition</span>
+											<span className="h6 text-muted">Maison d'édition</span>
 											<h4>GALLIMARD</h4>
 										</Col>
 
 										<Col>
-											<span class="h6 text-muted">Collection</span>
+											<span className="h6 text-muted">Collection</span>
 											<h4>BLANCHE</h4>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<span class="h6 text-muted">Date 1ere MEV</span>
+											<span className="h6 text-muted">Date 1ere MEV</span>
 											<h4>10 Avril 2015</h4>
 										</Col>
 										<Col>
-											<span class="h6 text-muted">Prix public TTC</span>
+											<span className="h6 text-muted">Prix public TTC</span>
 											<h4>21,00 €</h4>
 										</Col>
 									</Row>
@@ -155,11 +155,11 @@ function Article() {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6">au dernier arrêté (décembre 2020)</span>
+											<span className="h6">au dernier arrêté (décembre 2020)</span>
 											<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
 										</Col>
 										<Col>
-											<span class="h6">depuis parution</span>
+											<span className="h6">depuis parution</span>
 											<h3><span id="ventes_1">200 000</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
 										</Col>
 									</Row>
@@ -212,7 +212,7 @@ function Article() {
 										<tr>
 											<th scope="col">EAN</th>
 											<th scope="col">Maison</th>
-											<th scope="col"><span class="fullTable">Nbre réimpression</span><span className="mobileTable">Nbre</span></th>
+											<th scope="col"><span className="fullTable">Nbre réimpression</span><span className="mobileTable">Nbre</span></th>
 											<th scope="col">Date</th>
 										</tr>
 									</thead>
@@ -249,11 +249,11 @@ function Article() {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6">Disponible à la vente</span>
+											<span className="h6">Disponible à la vente</span>
 											<h3>7659</h3>
 										</Col>
 										<Col>
-											<span class="h6">Stock en dépôt</span>
+											<span className="h6">Stock en dépôt</span>
 											<h3>2590</h3>
 										</Col>
 									</Row>

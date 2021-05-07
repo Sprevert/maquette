@@ -92,32 +92,32 @@ const Articles = ({ articles }) => {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6 text-muted">EAN</span>
+											<span className="h6 text-muted">EAN</span>
 											<h3>{articles.ean}</h3>
 										</Col>
 										<Col>
-											<span class="h6 text-muted">Titre</span>
+											<span className="h6 text-muted">Titre</span>
 											<h3>{articles.titre}</h3>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<span class="h6 text-muted">Maison d'édition</span>
+											<span className="h6 text-muted">Maison d'édition</span>
 											<h4>{articles.maison}</h4>
 										</Col>
 
 										<Col>
-											<span class="h6 text-muted">Collection</span>
+											<span className="h6 text-muted">Collection</span>
 											<h4>{articles.collection}</h4>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<span class="h6 text-muted">Date 1ere MEV</span>
+											<span className="h6 text-muted">Date 1ere MEV</span>
 											<h4>{articles.parution}</h4>
 										</Col>
 										<Col>
-											<span class="h6 text-muted">Prix public TTC</span>
+											<span className="h6 text-muted">Prix public TTC</span>
 											<h4>{numberPrice(articles.prixTTC)} €</h4>
 										</Col>
 									</Row>
@@ -183,11 +183,11 @@ const Articles = ({ articles }) => {
 									<div className="text-center">
 										<Row>
 											<Col>
-												<span class="h6">au dernier arrêté (décembre 2020)</span>
+											<span className="h6">au dernier arrêté (décembre 2020)</span>
 												<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span><span id="ventes2020_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes / 3) + 5606)}</span></h3>
 											</Col>
 											<Col>
-												<span class="h6">depuis parution</span>
+											<span className="h6">depuis parution</span>
 												<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span><span id="ventes_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes) + 5656)}</span></h3>
 											</Col>
 										</Row>
@@ -212,7 +212,7 @@ const Articles = ({ articles }) => {
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
-										<h2 className="text-uppercase ls-1 mb-1">Mes Ventes GFK</h2>
+										<h2 className="text-uppercase ls-1 mb-1">Sorties caisses</h2>
 									</div>
 								</Row>
 							</CardHeader>
@@ -280,11 +280,11 @@ const Articles = ({ articles }) => {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6">Disponible à la vente</span>
+											<span className="h6">Disponible à la vente</span>
 											<h3>7659</h3>
 										</Col>
 										<Col>
-											<span class="h6">Stock en dépôt</span>
+											<span className="h6">Stock en dépôt</span>
 											<h3>2590</h3>
 										</Col>
 									</Row>

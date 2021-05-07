@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets\\css",
+    "\\assets",
     "\\assets\\img",
     "\\components",
     "\\components\\Sidebar",
-    "\\pages"
+    "\\layouts",
+    "\\pages",
+    "\\pages\\admin",
+    "\\pages\\admin\\titres",
+    "\\variables"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\pages\\admin\\profil.js",
   "PreviewInSolutionExplorer": false
 }

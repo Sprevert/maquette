@@ -83,7 +83,7 @@ div.compte.container-fluid { margin-top: -100px; }
 .header.compte { border-bottom: 14px solid #ff8a54; }
 
 .livres tr td { cursor: pointer; }
-.livres tr th { font-weight: bold; font-size: 13px !important;vertical-align:middle!important; }
+.livres tr th { font-weight: bold; font-size: 13px !important; vertical-align: middle !important; }
 .livres tr:hover { background-color: #f6f9fc; }
 
 .page { margin-top: -280px; position: relative; color: #fff; }
@@ -129,28 +129,29 @@ div.compte.container-fluid { margin-top: -100px; }
 .editions ul { display: none; }
 .editions li img { margin: 10px 15px; }
 
-.editions li:before,.editions .carousel-item span{ margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
+.editions li:before, .editions .carousel-item span { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
 .editions li.last:after { margin: 10px 0; height: 40px; border-right: 1px solid #DCE4F1; display: inline-block; vertical-align: middle; content: " " }
 
 
 .editions .carousel-item { height: 30px; vertical-align: middle; }
-.editions .carousel-item img{ height: 20px; vertical-align: middle; }
+.editions .carousel-item img { height: 20px; vertical-align: middle; }
 .editions .carousel-item span { margin: 0 10px; height: 30px; border-right: 2px solid #DCE4F1; display: inline-block; vertical-align: middle; }
+
 @media (min-width: 600px) {
 	.editions ul { display: block; }
 	.editions .carousel { display: none; }
 }
 
 /* Table */
-.table .thead-light th span{ color: #1453b3; }
+.table .thead-light th span { color: #1453b3; }
 .cTable table { background-color: #fff; border-radius: 10px; border-spacing: 0px; }
-.cTable th, .cTable th span{ font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
+.cTable th, .cTable th span { font-size: 12px; background-color: #DCE4F1; color: #1453b3; }
 .mobileTable { display: none; }
 .livres td img { height: 70px; }
 .livres td { vertical-align: middle !important; color: #000; }
 .livresh1, .livresh2 { font-weight: bold; }
-.livresh2 { font-size: 80%; white-space: normal;}
-.notVisible {visibility:hidden;}
+.livresh2 { font-size: 80%; white-space: normal; }
+.notVisible { visibility: hidden; }
 
 @media (max-width: 600px) {
 	.livresh1 { font-size: 140%; white-space: normal; margin-bottom: 5px; }
@@ -166,8 +167,9 @@ div.compte.container-fluid { margin-top: -100px; }
 .toggle a.active { background-color: #1453b3 !important; }
 .toggle .active span { color: #fff; }
 .toggle span { color: #1453b3; }
-.new{font-style:italic;font-weight:bold;vertical-align:middle;display:inline-block;}
+.new { font-style: italic; font-weight: bold; vertical-align: middle; display: inline-block; }
 
+.card-article { height: 100%; }
 .card-article .card-body { margin-top: 200px; }
 
 .card-article-image img { max-width: 200px; border-radius: 0.375rem; transform: translate(-50%, -30%); position: absolute; left: 50%; transition: all 0.15s ease; }
