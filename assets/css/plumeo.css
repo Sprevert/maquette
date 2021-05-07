@@ -169,6 +169,8 @@ div.compte.container-fluid { margin-top: -100px; }
 .toggle span { color: #1453b3; }
 .new { font-style: italic; font-weight: bold; vertical-align: middle; display: inline-block; }
 
+.documents .card { height: 100% }
+
 .card-article { height: 100%; }
 .card-article .card-body { margin-top: 200px; }
 

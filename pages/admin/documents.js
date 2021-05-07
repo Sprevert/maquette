@@ -74,7 +74,7 @@ function Documents() {
 					</Col>*/}
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="4">
-						<Card className="bg-secondary  shadow">
+						<Card className="bg-secondary shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
 									<div className="col">
@@ -143,7 +143,7 @@ function Documents() {
 						</Card>
 					</Col>
 
-					<Col className="order-xl-2 mb-5 mb-xl-5" xl="4">
+					<Col className="order-xl-2 mb-5 mb-xl-5 " xl="4">
 						<Card className="bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
@@ -160,6 +160,7 @@ function Documents() {
 											<th>Titre</th>
 											<th>Date</th>
 											<th>Crédit</th>
+											<th></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -168,30 +169,55 @@ function Documents() {
 											<td>Les trois femmes du consul</td>
 											<td>5 Mars 2021</td>
 											<td className="text-success">456 €</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>2 Févr. 2021</td>
 											<td className="text-success">350 €</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782070146413.jpg")} height="40" /></td>
 											<td>Check-Point</td>
 											<td>7 Janv. 2021</td>
 											<td className="text-success">850 €</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>4 Janv. 2021</td>
 											<td className="text-success">650 €</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
 											<td>5 Déc. 2021</td>
 											<td className="text-success">250 €</td>
+											<td>
+												<Link href="admin/document">
+													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
+												</Link>
+											</td>
 										</tr>
 									</tbody>
 								</Table>
