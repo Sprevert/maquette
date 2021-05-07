@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
     "\\assets\\img",
-    "\\components",
-    "\\components\\Sidebar",
-    "\\layouts",
+    "\\assets\\img\\plumeo",
+    "\\Documentation",
     "\\pages",
     "\\pages\\admin",
     "\\pages\\admin\\titres",
     "\\variables"
   ],
-  "SelectedNode": "\\pages\\admin\\profil.js",
+  "SelectedNode": "\\assets\\img\\plumeo",
   "PreviewInSolutionExplorer": false
 }

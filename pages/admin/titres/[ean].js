@@ -123,7 +123,7 @@ const Articles = ({ articles }) => {
 									</Row>
 									<Row><Col>{articles.logo != '' &&
 										<div className="editions p-1 pt-4">
-											<img src={require("assets/img/plumeo/" + articles.logo)} alt={articles.maison} height={25} />
+											<img src={require("assets/img/plumeo/" + articles.logo)} alt={articles.maison} height={articles.ean == '9782290005569' ? 35 : 25} />
 										</div>
 									}</Col></Row>
 								</div>
@@ -188,11 +188,11 @@ const Articles = ({ articles }) => {
 									<div className="text-center">
 										<Row>
 											<Col>
-											<span className="h6">au dernier arrêté (décembre 2020)</span>
+												<span className="h6">au dernier arrêté (décembre 2020)</span>
 												<h3><span id="ventes2020_1">{numberWithSpaces(articles.ventes / 3)}</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span><span id="ventes2020_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes / 3) + 5606)}</span></h3>
 											</Col>
 											<Col>
-											<span className="h6">depuis parution</span>
+												<span className="h6">depuis parution</span>
 												<h3><span id="ventes_1">{numberWithSpaces(articles.ventes)}</span><span id="ventes_2" style={{ display: 'none' }}>5656</span><span id="ventes_3" style={{ display: 'none' }}>{numberWithSpaces((articles.ventes) + 5656)}</span></h3>
 											</Col>
 										</Row>
