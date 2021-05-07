@@ -94,7 +94,7 @@ function Documents() {
 									<tbody>
 										<tr>
 											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
-											<td>1 Janv. 2021</td>
+											<td>1 janv. 2021</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
@@ -103,7 +103,7 @@ function Documents() {
 										</tr>
 										<tr>
 											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
-											<td>1 Janv. 2021</td>
+											<td>1 janv. 2021</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
@@ -112,7 +112,7 @@ function Documents() {
 										</tr>
 										<tr>
 											<td className="text-center"><img src={require("assets/img/plumeo/Flammarion_logo.png")} alt="Flammarion" height={15} /></td>
-											<td>1 Juil. 2020</td>
+											<td>1 juil. 2020</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
@@ -121,7 +121,7 @@ function Documents() {
 										</tr>
 										<tr>
 											<td className="text-center"><img src={require("assets/img/plumeo/Gallimard_logo.png")} alt="Gallimard" height={15} /></td>
-											<td>1 Janv. 2020</td>
+											<td>1 janv. 2020</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
@@ -130,7 +130,7 @@ function Documents() {
 										</tr>
 										<tr>
 											<td className="text-center"><img src={require("assets/img/plumeo/Lu_logo.png")} alt="J'ai Lu" height={30} /></td>
-											<td>1 Janv. 2020</td>
+											<td>1 janv. 2020</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
@@ -167,7 +167,7 @@ function Documents() {
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
-											<td>5 Mars 2021</td>
+											<td>5 mars 2021</td>
 											<td className="text-success">456 €</td>
 											<td>
 												<Link href="admin/document">
@@ -178,7 +178,7 @@ function Documents() {
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
-											<td>2 Févr. 2021</td>
+											<td>2 févr. 2021</td>
 											<td className="text-success">350 €</td>
 											<td>
 												<Link href="admin/document">
@@ -189,7 +189,7 @@ function Documents() {
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782070146413.jpg")} height="40" /></td>
 											<td>Check-Point</td>
-											<td>7 Janv. 2021</td>
+											<td>7 janv. 2021</td>
 											<td className="text-success">850 €</td>
 											<td>
 												<Link href="admin/document">
@@ -200,7 +200,7 @@ function Documents() {
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
-											<td>4 Janv. 2021</td>
+											<td>4 janv. 2021</td>
 											<td className="text-success">650 €</td>
 											<td>
 												<Link href="admin/document">
@@ -211,7 +211,7 @@ function Documents() {
 										<tr>
 											<td className="p-0 pl-2"><img alt="..." src={require("assets/img/couverture/9782081420250.jpg")} height="40" /></td>
 											<td>Les trois femmes du consul</td>
-											<td>5 Déc. 2021</td>
+											<td>5 déc. 2021</td>
 											<td className="text-success">250 €</td>
 											<td>
 												<Link href="admin/document">
@@ -247,7 +247,7 @@ function Documents() {
 									<tbody>
 										<tr>
 											<td>DADS 2020</td>
-											<td>1 Janv. 2021</td>
+											<td>1 janv. 2021</td>
 											<td>
 												<Link href="admin/document">
 													<a className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></a>
